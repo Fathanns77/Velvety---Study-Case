@@ -1,0 +1,26 @@
+$color-primary: #c8d8c0;
+$color-primary-light: #e4ece0;
+
+$color-primary-dark-1: #496839;
+$color-primary-dark-2: #213721;
+$color-primary-dark-3: #101c10;
+
+$content-color-light-1: #f2f6ef;
+$content-color-light-2: #c7d1c6;
+$content-color-light-3: #899f8f;
+
+$content-color-dark-1: #3c5e39;
+$content-color-dark-2: #213721;
+
+$font-secondary: 'Aileron', sans-serif;                                              
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    color: $content-color-dark-1;
+    font-family: $font-secondary;
+}
