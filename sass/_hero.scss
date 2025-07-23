@@ -1,3 +1,90 @@
 .hero {
-    background-color: $content-color-light-3;
+  background-color: $content-color-light-3;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 733px;
+    margin-top: -84px;
+    align-items: center;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .hero__product {
+      position: absolute;
+      height: 780.36px;
+      top: 48.54px;
+      left: 107.31px;
+      z-index: 2;
+    }
+  }
+
+  &__right {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/hero-bg.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+
+    .hero__headline {
+      max-width: 100%;
+      height: 357px;
+      position: absolute;
+      top: 146px;
+      left: 544px;
+
+      font-size: 100px;
+      color: $content-color-light-1;
+    }
+
+    .hero__button {
+      position: absolute;
+      width: 356px;
+      left: 547px;
+      top: 592.5px;
+    }
+  }
+}
+
+//scroll indicator
+.slider {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  height: 131.58px;
+  width: 30.11px;
+  top: 292px;
+  left: 68px;
+
+  .arrow {
+    width: 30.11px;
+    height: 18.47px;
+  }
+
+  .dot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .dot span {
+    width: 4px;
+    height: 4px;
+    transform: rotate(45deg);
+    background-color: $color-primary-light;
+  }
+
+  .dot1 {
+    background-color: $content-color-dark-1 !important;
+  }
 }

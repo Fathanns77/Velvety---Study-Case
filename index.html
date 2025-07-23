@@ -2,65 +2,338 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link href="https://fonts.cdnfonts.com/css/aileron" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/png" href="img/logo small.png">
-
-    <title>Velvety &mdash;</title>
+  <title>Velvety &mdash;</title>
+  <link href="https://fonts.cdnfonts.com/css/aileron" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" type="image/png" href="img/logo small.png" />
 </head>
 
 <body class="container">
-    <section class="hero">
-        <!-- NAVIGATION -->
-        <nav class="nav">
-            <img src="img/Logo small.svg" alt="logo" class="nav__logo" />
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <!-- NAVIGATION -->
+    <nav class="nav">
+      <img src="img/Logo small.svg" alt="logo" class="nav__logo" />
+      <div class="nav__menu">
+        <ul class="nav__menu--1">
+          <li class="menu__items">Page</li>
+          <li class="menu__items">Shop</li>
+          <li class="menu__items">About</li>
+        </ul>
+        <ul class="nav__menu--2">
+          <li class="menu__items">Login</li>
+          <li class="menu__items">Cart (0)</li>
+        </ul>
+      </div>
+    </nav>
 
-            <div class="nav__menu">
-                <ul class="nav__menu--1">
-                    <li class="menu__items">Page</li>
-                    <li class="menu__items">Shop</li>
-                    <li class="menu__items">About</li>
-                </ul>
-                <ul class="nav__menu--2">
-                    <li class="menu__items">Login</li>
-                    <li class="menu__items">Cart (0)</li>
-                </ul>
-            </div>
-        </nav>
+    <!-- HERO CONTENT -->
+    <div class="hero__content">
+      <div class="hero__left">
+        <img src="img/product-hero.png" alt="Product Bottle" class="hero__product" />
+      </div>
 
-        <!-- HERO CONTENT -->
-        <div class="hero__content">
-            <div class="hero__left">
-                <img src="img/product.png" alt="Product Bottle" class="hero__product" />
-                <div class="hero__slider">
-                    <span class="arrow up">↑</span>
-                    <span class="arrow down">↓</span>
-                </div>
-            </div>
+      <div class="hero__right">
+        <h1 class="hero__headline">
+          Let nature take <br />
+          care of your body <br />
+          and soul
+        </h1>
 
-            <div class="hero__right">
-                <h1 class="hero__headline">
-                    Let nature take <br />
-                    care of your body <br />
-                    and soul
-                </h1>
-                <button class="hero__button">Shop now →</button>
-            </div>
+        <a class="hero__button btn">
+          <span class="btn__text">Shop Now</span>
+          <img src="img/row.svg" alt="row" class="btn__icon" />
+        </a>
+      </div>
+
+      <!-- SCROLL INDICATOR -->
+      <div class="slider">
+        <img src="img/Arrow-Right.svg" alt="Arrow-Right" class="arrow arrow--right" />
+
+        <div class="dot">
+          <span class="dot1"></span>
+          <span class="dot2"></span>
+          <span class="dot3"></span>
+          <span class="dot4"></span>
         </div>
-    </section>
 
-    <section class="ingredients">
-        ingredients
-    </section>
+        <img src="img/Arrow-Left.svg" alt="Arrow-Left" class="arrow arrow--left" />
+      </div>
+    </div>
+  </section>
 
-    <section class="featured">
-        featured
-    </section>
+  <!-- OTHER SECTIONS -->
+  <section class="ingredients">
+    <div class="ingredients__left">
+      <img src="img/powder.png" alt="Green powder in bowl" class="ingredients__image" />
+      <h2 class="ingredients__headline">Inspired by traditional<br>knowledge and nature</h2>
+    </div>
 
+    <div class="ingredients__right">
+      <div class="ingredients__feature">
+        <img src="img/Organic.svg" alt="Organic Icon" class="feature__icon" />
+        <div class="feature__text">
+          <h3 class="feature__title">100% Organic</h3>
+          <p class="feature__desc">We craft skincare using the most exquisite ingredients from the plant, earth and
+            mineral realms.</p>
+        </div>
+      </div>
+
+      <div class="ingredients__feature">
+        <img src="img/skin 1.svg" alt="Skin Icon" class="feature__icon" />
+        <div class="feature__text">
+          <h3 class="feature__title">Fits your skin</h3>
+          <p class="feature__desc">It’s all natural and processed based on traditional knowledge with modern technology.
+          </p>
+        </div>
+      </div>
+
+      <div class="ingredients__feature">
+        <img src="img/serum 3.svg" alt="Easy to Use Icon" class="feature__icon" />
+        <div class="feature__text">
+          <h3 class="feature__title">Easy to use</h3>
+          <p class="feature__desc">Packed with a unique design as well as useful that can help you perform routine skin
+            care.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="featured">
+    <div class="featured__header">
+      <h6 class="featured__subtitle">Our featured products</h6>
+      <h2 class="featured__title">
+        Facial and skincare, natural and<br />
+        certified organic
+      </h2>
+    </div>
+
+    <div class="featured__products">
+      <!-- Product 1 -->
+      <div class="product-card">
+        <div class="product-card__image">
+          <img src="img/Product Image.png" alt="Velvety Chicori" />
+        </div>
+        <div class="product-card__desc">
+          <div class="desc--nameprice">
+            <h6 class="product-card__name">CHICORI</h6>
+            <p class="product-card__price">$20</p>
+          </div>
+          <div class="rating">
+            <div class="product-rating__stars">
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+            </div>
+            <p class="product-rating__rating">5.0</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card-2">
+        <div class="product-card__image">
+          <img src="img/Product Image 2.png" alt="Velvety Notorious" />
+        </div>
+        <div class="product-card__desc">
+          <div class="desc--nameprice">
+            <h6 class="product-card__name">NOTORIOUS</h6>
+            <p class="product-card__price">$23</p>
+          </div>
+          <div class="rating">
+            <div class="product-rating__stars">
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+            </div>
+            <p class="product-rating__rating">5.0</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <div class="product-card__image">
+          <img src="img/Product Image 3.png" alt="Velvety Holocena" />
+        </div>
+        <div class="product-card__desc">
+          <div class="desc--nameprice">
+            <h6 class="product-card__name">HOLOCENA</h6>
+            <p class="product-card__price">$20</p>
+          </div>
+          <div class="rating">
+            <div class="product-rating__stars">
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+            </div>
+            <p class="product-rating__rating">5.0</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="aboutus-company">
+    <!-- About Us Section -->
+    <div class="aboutus">
+      <div class="headline">
+        <h6 class="headline__title">About us</h6>
+        <h2 class="headline__subtitle">Velvety facial and skincare company</h2>
+      </div>
+      <div class="aboutus__description">
+        <p>
+          Velvety is an indigenous company that specializes in the manufacture and development of facial and skincare
+          products using the medicinal properties of the traditional First Nations pharmacopoeia, with a concern for
+          sustainable development.
+        </p>
+        <p>
+          The products offered, whose benefits have been scientifically confirmed, are 100% natural and allow you to
+          take care of your body and mind: calming teas, energizing infusions, anti-inflammatory essential oils,
+          anti-age soaps and creams, etc.
+        </p>
+      </div>
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="asseenis">
+      <p class="asseenis__title">As seen in</p>
+      <div class="asseenis__company">
+        <div class="company01">
+          <img src="img/company01.png" alt="Vogue Logo">
+        </div>
+        <div class="company02">
+          <img src="img/company02.png" alt="Forbes Logo">
+        </div>
+        <div class="company03">
+          <img src="img/company03.png" alt="Thought Catalog Logo">
+        </div>
+        <div class="company04">
+          <img src="img/company04.png" alt="Women's Health Logo">
+        </div>
+        <div class="company05">
+          <img src="img/company05.png" alt="WWD Logo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h4 class="cta__title">
+      Let’s see the processing of our products
+    </h4> <!-- INI HARUS ADA -->
+    <img src="img/Arrow-Right.svg" alt="arrow right" class="cta__icon" />
+  </section>
+
+  <section class="all-products">
+      <div class="all-products__left">
+
+        <!-- Headline -->
+        <div class="headline">
+          <p>All Products</p>
+          <h2>Mild skincare & facial routine</h2>
+        </div>
+
+        <!-- Listing Categories -->
+        <div class="listing-categories">
+          <button class="category active">All Needs</button>
+          <button class="category">Protect</button>
+          <button class="category">Regenerates</button>
+          <button class="category">Revitalize</button>
+          <button class="category">Feeds</button>
+          <button class="category">Regulates</button>
+          <button class="category">Purifies</button>
+          <button class="category">Makeup Removal</button>
+          <button class="category">Exfoliate</button>
+          <button class="category">Antioxidant</button>
+          <button class="category">Soothe</button>
+          <button class="category">Smoothen skin texture</button>
+          <button class="category">Tones</button>
+          <button class="category">Anti-waste</button>
+          <button class="category">Hydrate</button>
+          <button class="category">Strengthens</button>
+          <button class="category">Regenerates after UV exposure. Strengthens</button>
+        </div>
+
+      </div>
+
+      <div class="all-products__right">
+
+        <!-- Product Rows -->
+        <div class="product-row">
+          <div class="product-card">
+            <img src="img/product1.png" alt="CLASSYWIG">
+            <h3>CLASSYWIG</h3>
+            <p>$20</p>
+            <div class="product-rating__stars">
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="img/product2.png" alt="HOLCANE">
+            <h3>HOLCANE</h3>
+            <p>$23</p>
+            <div class="product-rating__stars">
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-row">
+          <div class="product-card">
+            <img src="img/product3.png" alt="INAMORATA">
+            <h3>INAMORATA</h3>
+            <p>$12</p>
+            <div class="product-rating__stars">
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="img/product4.png" alt="LIGHTCOOL">
+            <h3>LIGHTCOOL</h3>
+            <p>$225</p>
+            <div class="product-rating__stars">
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+              <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="btn">
+          <button>Shop more <span class="arrow">→</span></button>
+        </div>
+    </div>
+  </section>
 
 </body>
 

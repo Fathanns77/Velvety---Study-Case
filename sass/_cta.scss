@@ -1,0 +1,20 @@
+.cta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 80px;
+  background: $content-color-light-3;
+
+  &__title {
+    font-size: 40px;
+    font-weight: 300;
+    color: $content-color-light-1;
+    font-family: $font-primary;
+  }
+
+  &__icon {
+    width: 65.99px;
+    height: 40.1px;
+  }
+}

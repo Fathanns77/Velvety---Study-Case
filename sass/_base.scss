@@ -12,15 +12,29 @@ $content-color-light-3: #899f8f;
 $content-color-dark-1: #3c5e39;
 $content-color-dark-2: #213721;
 
-$font-secondary: 'Aileron', sans-serif;                                              
+$font-secondary: 'Aileron', sans-serif;
+$font-primary: 'IvyMode', sans-serif;
+
+/* IvyMode - Light */
+@font-face {
+    font-family: 'IvyMode';
+    src: url('fonts/IvyMode_Light.otf') format('opentype');
+}
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 body {
     color: $content-color-dark-1;
     font-family: $font-secondary;
+}
+
+.container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 733px 589px 1021px 807px 129px 1290px;
+  max-width: 1440px;
 }
