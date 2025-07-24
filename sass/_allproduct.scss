@@ -1,4 +1,4 @@
-.all-product {
+.all-products {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -6,6 +6,157 @@
   padding: 96px 80px;
   gap: 89px;
 
-  border-bottom: 1px solid $color-primary;
+  background-color: $content-color-light-1;
 
+  &__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+
+    width: 532px;
+    height: 613px;
+  }
+
+  .headline {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .headline-title {
+    font-family: $font-secondary;
+    font-size: 28px;
+    font-weight: 300;
+    color: $content-color-light-3;
+  }
+
+  .headline-subtitle {
+    font-family: $font-primary;
+    font-size: 56px;
+    font-weight: 300;
+    color: $content-color-dark-2;
+  }
+
+  .listing-categories {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+
+    width: 532px;
+    height: 392px;
+
+    &__row {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 16px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 42px;
+
+    width: 650px;
+    height: 1098px;
+  }
+
+  .product-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+
+    width: 650px;
+    height: 481px;
+  }
+
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 305px;
+    height: 481px;
+
+    border: 1px solid $color-primary;
+  }
+
+  .product__image {
+    width: 305px;
+    height: 320px;
+  }
+
+  .product__desc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 10px;
+
+    width: 305px;
+    height: 161px;
+
+    border-top: 1px solid $color-primary;
+  }
+
+  .product__title {
+    font-family: $font-secondary;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 140%;
+    color: $content-color-dark-2;
+  }
+
+  .product__price {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 140%;
+    color: $color-primary-dark-2;
+  }
+
+  .rating2 {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .ratings_number {
+    font-family: $font-secondary;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 140%;
+    color: $content-color-dark-1;
+  }
+
+  .shop-cta {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 32px;
+    gap: 10px;
+
+    max-width: max-content;
+    height: 52px;
+    border: 1px solid $content-color-dark-2;
+
+    text-decoration: none;
+
+    &__text {
+      color: $content-color-dark-2;
+      line-height: 140%;
+    }
+
+    &__icon {
+      width: 30.11px;
+      height: 18.47px;
+    }
+  }
 }

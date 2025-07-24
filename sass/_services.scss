@@ -1,0 +1,77 @@
+.try-service {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 96px 211px;
+  gap: 10px;
+  position: relative;
+  background-color: $content-color-light-1;
+
+  border-bottom: 1px solid $color-primary;
+  border-top: 1px solid $color-primary;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+
+    width: 519px;
+    height: 337px;
+
+    &--headline {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    &--pretitle {
+      font-size: 28px;
+      font-weight: 300;
+      color: $content-color-light-3;
+    }
+
+    &--title {
+      font-size: 56px;
+      font-weight: 300;
+      color: $content-color-dark-2;
+    }
+
+    &--subtitle {
+      font-size: 20px;
+      font-weight: 300;
+      color: $content-color-dark-1;
+    }
+
+    .shop-cta {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      padding: 0px 32px;
+      gap: 10px;
+
+      max-width: max-content;
+      height: 52px;
+      border: 1px solid $content-color-dark-2;
+
+      text-decoration: none;
+
+      &__text {
+        color: $content-color-dark-2;
+      }
+    }
+  }
+
+  &__image {
+    position: absolute;
+    width: 348px;
+    height: 434.7px;
+    left: 181px;
+    top: calc(50% - 434.7px / 2 + 12.85px);
+    order: 1;
+  }
+}

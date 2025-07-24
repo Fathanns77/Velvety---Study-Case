@@ -7,7 +7,7 @@ $color-primary-dark-3: #101c10;
 
 $content-color-light-1: #f2f6ef;
 $content-color-light-2: #c7d1c6;
-$content-color-light-3: #899f8f;
+$content-color-light-3: #899f87;
 
 $content-color-dark-1: #3c5e39;
 $content-color-dark-2: #213721;
@@ -29,12 +29,13 @@ $font-primary: 'IvyMode', sans-serif;
 
 body {
     color: $content-color-dark-1;
-    font-family: $font-secondary;
+    font-family: $font-secondary;   
+    font-weight: 400;
 }
 
 .container {
   margin: 0 auto;
   display: grid;
-  grid-template-rows: 733px 589px 1021px 807px 129px 1290px;
+  grid-template-rows: 733px 589px 1021px 807px 129px 1290px 529px 677px 434px 214px;
   max-width: 1440px;
 }

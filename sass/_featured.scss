@@ -5,6 +5,8 @@
   align-items: flex-start;
   padding: 0px;
 
+  background-color: $content-color-light-1;
+
   &__header {
     display: flex;
     flex-direction: column;
@@ -36,6 +38,7 @@
     border-width: 1px 0px;
     border-style: solid;
     border-color: $color-primary;
+    z-index: 1;
 
     .product-card {
       display: flex;

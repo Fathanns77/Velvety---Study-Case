@@ -18,3 +18,136 @@
     height: 40.1px;
   }
 }
+
+.cta02 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 96px 80px;
+  gap: 92px;
+
+  width: 1440px;
+  height: 434px;
+  background-color: $content-color-light-1;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+
+    width: 303.33px;
+    height: 242px;
+  }
+
+  .head-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+    width: max-content;
+    height: 68px;
+  }
+}
+
+.cta02__subtitle {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 140%;
+  color: $content-color-light-3;
+}
+
+.shop-cta {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 32px;
+  gap: 10px;
+
+  max-width: max-content;
+  height: 52px;
+  border: 1px solid $content-color-dark-2;
+
+  text-decoration: none;
+
+  &__text {
+    color: $content-color-dark-2;
+  }
+}
+
+.cta02__separator {
+  width: 1px;
+  height: 88px;
+
+  background: #d9d9d9;
+}
+
+.newsletter-cta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 80px;
+  background: $content-color-light-3;
+  
+
+  &__title {
+    font-size: 56px;
+    color: $content-color-light-1;
+    width: max-content;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 537.84px;
+    height: 72px;
+    color: $content-color-light-3;
+  }
+
+  &__input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 24px;
+    gap: 10px;
+
+    width: 450px;
+    height: 72px;
+
+    background: #ffffff;
+    border: 1px solid $color-primary;
+
+    font-size: 20px;
+    letter-spacing: 1%;
+  }
+
+  &__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+
+    width: 87.84px;
+    height: 72px;
+
+    background: #ffffff;
+    border-width: 1px 1px 1px 0px;
+    border-style: solid;
+    border-color: $color-primary;
+
+    .arrow-cta {
+      width: 47.84px;
+      height: 29px;
+    }
+  }
+}

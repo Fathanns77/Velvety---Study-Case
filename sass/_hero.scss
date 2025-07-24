@@ -2,11 +2,12 @@
   background-color: $content-color-light-3;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   position: relative;
 
   &__content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 710px 730px;
     grid-template-rows: 733px;
     margin-top: -84px;
     align-items: center;
