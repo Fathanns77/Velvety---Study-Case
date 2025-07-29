@@ -1,10 +1,17 @@
 .cta {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px 80px;
   background: $content-color-light-3;
+  padding: 40px 80px;
+
+  .container {
+    width: 100%;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   &__title {
     font-size: 40px;
@@ -19,15 +26,23 @@
   }
 }
 
-.cta02 {
+.cta02-wrapper {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
-  padding: 96px 80px;
+  flex-wrap: nowrap;
   gap: 92px;
 
-  width: 1440px;
-  height: 434px;
+  max-width: 1440px;
+  width: 100%;
+  padding: 96px 80px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.cta02 {
+  width: 100%;
   background-color: $content-color-light-1;
 
   &__item {
@@ -35,11 +50,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px;
     gap: 32px;
 
-    width: 303.33px;
+    flex: 1 1 300px;
+    max-width: 303.33px;
+    min-width: 260px;
     height: 242px;
+    box-sizing: border-box;
   }
 
   .head-text {
@@ -73,7 +90,6 @@
   max-width: max-content;
   height: 52px;
   border: 1px solid $content-color-dark-2;
-
   text-decoration: none;
 
   &__text {
@@ -82,32 +98,66 @@
 }
 
 .cta02__separator {
-  width: 1px;
+  flex: 0 0 1px;
   height: 88px;
-
   background: #d9d9d9;
 }
 
+@media (max-width: $bp-largest) {
+  .cta02-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 64px 24px;
+  }
+
+  .cta02__item {
+    flex: 1 1 280px;
+    max-width: 320px;
+    min-width: 200px;
+    height: auto;
+  }
+
+  .cta02__separator {
+    display: none;
+  }
+}
+
 .newsletter-cta {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px 80px;
   background: $content-color-light-3;
-  
+  padding: 40px 80px;
+
+  .container {
+    width: 100%;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    @media (max-width: $bp-largest) {
+      flex-wrap: wrap;
+    }
+  }
 
   &__title {
     font-size: 56px;
     color: $content-color-light-1;
     width: max-content;
+
+    @media (max-width: $bp-largest) {
+      font-size: 64px;
+    }
   }
 
   &__form {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 537.84px;
+    width: 100%;
+    max-width: 537px;
     height: 72px;
     color: $content-color-light-3;
   }

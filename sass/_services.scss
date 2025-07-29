@@ -1,15 +1,30 @@
 .try-service {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  padding: 96px 211px;
-  gap: 10px;
-  position: relative;
+  gap: 181px;
+  padding: 96px 80px;
   background-color: $content-color-light-1;
-
-  border-bottom: 1px solid $color-primary;
   border-top: 1px solid $color-primary;
+  border-bottom: 1px solid $color-primary;
+
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column;
+  }
+
+  &__image {
+    flex-shrink: 0;
+    order: 0;
+    width: 348px;
+    height: auto;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
 
   &__content {
     display: flex;
@@ -17,9 +32,8 @@
     justify-content: center;
     align-items: flex-start;
     gap: 32px;
-
-    width: 519px;
-    height: 337px;
+    max-width: 600px;
+    order: 1;
 
     &--headline {
       display: flex;
@@ -57,21 +71,11 @@
       max-width: max-content;
       height: 52px;
       border: 1px solid $content-color-dark-2;
-
       text-decoration: none;
 
       &__text {
         color: $content-color-dark-2;
       }
     }
-  }
-
-  &__image {
-    position: absolute;
-    width: 348px;
-    height: 434.7px;
-    left: 181px;
-    top: calc(50% - 434.7px / 2 + 12.85px);
-    order: 1;
   }
 }

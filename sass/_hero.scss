@@ -1,16 +1,49 @@
 .hero {
   background-color: $content-color-light-3;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   position: relative;
 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/hero-bg.jpg");
+  background-size: 50vw;
+  background-repeat: no-repeat;
+  background-position: right top;
+
+  @media only screen and (max-width: $bp-large) {
+    background-size: cover;
+    background-position: 50vw;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    background-size: cover;
+    background-position: right;
+  }
+
+  .container {
+    max-width: map-get($container-max-widths, xxl);
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+
   &__content {
-    display: grid;
-    grid-template-columns: 710px 730px;
-    grid-template-rows: 733px;
-    margin-top: -84px;
+    display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    margin-top: -84px;
+    height: 733px;
+    position: relative;
+    flex-wrap: wrap;
+
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: row;
+    }
   }
 
   &__left {
@@ -24,15 +57,21 @@
       top: 48.54px;
       left: 107.31px;
       z-index: 2;
+
+      @media only screen and (max-width: $bp-large) {
+        left: 20px;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        left: -60px;
+      }
     }
   }
 
   &__right {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../img/hero-bg.jpg");
     width: 100%;
+    max-width: 730px;
     height: 100%;
-    background-size: cover;
 
     .hero__headline {
       max-width: 100%;
@@ -43,49 +82,88 @@
 
       font-size: 100px;
       color: $content-color-light-1;
+
+      @media only screen and (max-width: $bp-largest) {
+        font-size: 90px;
+      }
+      @media only screen and (max-width: 1100px) {
+        font-size: 80px;
+      }
+      @media only screen and (max-width: $bp-large) {
+        font-size: 75px;
+        left: 420px;
+        max-width: 550px;
+      }
+      @media only screen and (max-width: $bp-medium) {
+        left: 330px;
+        width: 50%;
+
+        text-align: none;
+      }
     }
 
     .hero__button {
       position: absolute;
-      width: 356px;
+      width: 100%;
+      max-width: 356px;
       left: 547px;
       top: 592.5px;
+
+      @media only screen and (max-width: $bp-large) {
+        left: 420px;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        left: 330px;
+      }
     }
   }
-}
 
-//scroll indicator
-.slider {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  height: 131.58px;
-  width: 30.11px;
-  top: 292px;
-  left: 68px;
-
-  .arrow {
-    width: 30.11px;
-    height: 18.47px;
-  }
-
-  .dot {
+  .slider {
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
-  }
+    gap: 24px;
+    height: 131.58px;
+    width: 30.11px;
+    top: 292px;
+    left: 68px;
 
-  .dot span {
-    width: 4px;
-    height: 4px;
-    transform: rotate(45deg);
-    background-color: $color-primary-light;
-  }
+    @media only screen and (max-width: $bp-medium) {
+      left: 50vw;
+      top: 56vh;
+    }
 
-  .dot1 {
-    background-color: $content-color-dark-1 !important;
+    .arrow {
+      width: 30.11px;
+      height: 18.47px;
+
+      @media only screen and (max-width: $bp-medium) {
+        display: none;
+      }
+    }
+
+    .dot {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+
+      @media only screen and (max-width: $bp-medium) {
+        flex-direction: row;
+      }
+
+      span {
+        width: 4px;
+        height: 4px;
+        transform: rotate(45deg);
+        background-color: $color-primary-light;
+      }
+
+      .dot1 {
+        background-color: $content-color-dark-1 !important;
+      }
+    }
   }
 }
