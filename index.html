@@ -22,35 +22,33 @@
           <img src="img/Logo small.svg" alt="logo" class="nav__logo" />
           <div class="nav__menu">
             <ul class="nav__menu--1">
-              <li class="menu__items">Page</li>
-              <li class="menu__items">Shop</li>
-              <li class="menu__items">About</li>
+              <li class="menu__items show-sm">Shop</li>
+              <li class="menu__items hide-sm">Page</li>
+              <li class="menu__items hide-sm">About</li>
             </ul>
             <ul class="nav__menu--2">
-              <li class="menu__items">Login</li>
-              <li class="menu__items">Cart (0)</li>
+              <li class="menu__items hide-sm">Login</li>
+              <li class="menu__items show-sm">Cart (0)</li>
             </ul>
+
+            <div class="hamburger"></div>
           </div>
         </nav>
 
         <!-- HERO CONTENT -->
         <div class="hero__content">
-          <div class="hero__left">
-            <img src="img/product-hero.png" alt="Product Bottle" class="hero__product" />
-          </div>
+          <img src="img/product-hero.png" alt="Product Bottle" class="hero__product" />
 
-          <div class="hero__right">
-            <h1 class="hero__headline">
-              Let nature take <br />
-              care of your body <br />
-              and soul
-            </h1>
+          <h1 class="hero__headline">
+            Let nature take <br />
+            care of your body <br />
+            and soul
+          </h1>
 
-            <a class="hero__button btn">
-              <span class="btn__text">Shop Now</span>
-              <img src="img/row.svg" alt="row" class="btn__icon" />
-            </a>
-          </div>
+          <a class="hero__button btn">
+            <span class="btn__text">Shop Now</span>
+            <img src="img/row.svg" alt="row" class="btn__icon" />
+          </a>
 
           <!-- SCROLL INDICATOR -->
           <div class="slider">
@@ -69,6 +67,7 @@
       </div>
     </div>
   </section>
+
 
   <section class="ingredients">
     <div class="container">
@@ -226,19 +225,19 @@
           <p class="asseenis__title">As seen in</p>
           <div class="asseenis__company">
             <div class="company">
-              <img src="img/company01.png" alt="Vogue Logo" />
+              <img src="img/company01.png" class="company--image" alt="Vogue Logo" />
             </div>
             <div class="company">
-              <img src="img/company02.png" alt="Forbes Logo" />
+              <img src="img/company02.png" class="company--image" alt="Forbes Logo" />
             </div>
             <div class="company">
-              <img src="img/company03.png" alt="Thought Catalog Logo" />
+              <img src="img/company03.png" class="company--image" alt="Thought Catalog Logo" />
             </div>
             <div class="company">
-              <img src="img/company04.png" alt="Women's Health Logo" />
+              <img src="img/company04.png" class="company--image" alt="Women's Health Logo" />
             </div>
             <div class="company">
-              <img src="img/company05.png" alt="WWD Logo" />
+              <img src="img/company05.png" class="company--image" alt="WWD Logo" />
             </div>
           </div>
         </div>
@@ -276,28 +275,28 @@
               <button class="category btns">Protect</button>
               <button class="category btns">Regenerates</button>
             </div>
-            <div class="listing-categories__row">
+            <div class="listing-categories__row list-row_sm">
               <button class="category btns">Revitalize</button>
               <button class="category btns">Feeds</button>
               <button class="category btns">Regulates</button>
               <button class="category btns">Purifies</button>
             </div>
-            <div class="listing-categories__row">
+            <div class="listing-categories__row list-row_sm">
               <button class="category btns">Makeup Removal</button>
               <button class="category btns">Exfoliate</button>
               <button class="category btns">Antioxidant</button>
             </div>
-            <div class="listing-categories__row">
+            <div class="listing-categories__row list-row_sm">
               <button class="category btns">Soothe</button>
               <button class="category btns">Smoothen skin texture</button>
               <button class="category btns">Tones</button>
             </div>
-            <div class="listing-categories__row">
+            <div class="listing-categories__row list-row_sm">
               <button class="category btns">Anti-waste</button>
               <button class="category btns">Hydrate</button>
               <button class="category btns">Strengthens</button>
             </div>
-            <div class="listing-categories__row">
+            <div class="listing-categories__row list-row_sm">
               <button class="category btns">Regenerates after UV exposure. Strengthens</button>
             </div>
           </div>
@@ -392,26 +391,31 @@
 
 
   <section class="try-service">
-    <div class="try-service__content">
-      <div class="try-service__content--headline">
-        <h6 class="try-service__content--pretitle">Try Our Service</h6>
-        <h2 class="try-service__content--title">Your skin diagnosis in<br>3 minutes</h2>
-        <p class="try-service__content--subtitle">
-          Say hello to a more radiant, healthier you with personalized<br>
-          skincare that's as unique as you are.
-        </p>
+    <div class="container">
+      <div class="try-service__wrapper">
+        <div class="try-service__content">
+          <div class="try-service__content--headline">
+            <h6 class="try-service__content--pretitle">Try Our Service</h6>
+            <h2 class="try-service__content--title">Your skin diagnosis in<br>3 minutes</h2>
+            <p class="try-service__content--subtitle">
+              Say hello to a more radiant, healthier you with personalized<br>
+              skincare that's as unique as you are.
+            </p>
+          </div>
+
+          <a href="#" class="shop-cta">
+            <span class="shop-cta__text">Start my diagnosis</span>
+            <img src="img/Arrow-right dark.svg" alt="Arrow Right" class="shop-cta__icon" />
+          </a>
+        </div>
+
+        <div class="try-service__image">
+          <img src="img/Image ilustrations.png" alt="Line Art Face Illustration" />
+        </div>
       </div>
-
-      <a href="#" class="shop-cta">
-        <span class="shop-cta__text">Start my diagnosis</span>
-        <img src="img/Arrow-right dark.svg" alt="Arrow Right" class="shop-cta__icon">
-      </a>
-    </div>
-
-    <div class="try-service__image">
-      <img src="img/Image ilustrations.png" alt="Line Art Face Illustration" />
     </div>
   </section>
+
 
 
   <section class="testimonials">
@@ -465,7 +469,7 @@
     </div>
   </section>
 
-  
+
   <section class="cta02">
     <div class="container">
       <div class="cta02-wrapper">

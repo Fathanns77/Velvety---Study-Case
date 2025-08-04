@@ -5,6 +5,10 @@
   .container {
     display: flex;
     justify-content: center;
+
+    @media only screen and (max-width: $bp-small) {
+      height: auto;
+    }
   }
 
   &__wrapper {
@@ -30,6 +34,11 @@
     width: 100%;
     max-width: 532px;
     height: 613px;
+
+    @media only screen and (max-width: $bp-small) {
+      height: 100%;
+      max-height: fit-content;
+    }
   }
 
   .headline {
@@ -61,12 +70,23 @@
     width: 532px;
     height: 392px;
 
+    @media only screen and (max-width: $bp-small) {
+      height: 100%;
+      max-height: fit-content;
+    }
+
     &__row {
       display: flex;
       flex-direction: row;
       align-items: flex-start;
       gap: 16px;
       flex-wrap: wrap;
+    }
+
+    .list-row_sm {
+      @media only screen and (max-width: $bp-small) {
+        display: none;
+      }
     }
   }
 
@@ -86,6 +106,10 @@
     flex-direction: row;
     align-items: flex-start;
     gap: 40px;
+
+    @media only screen and (max-width: $bp-small) {
+      flex-wrap: wrap;
+    }
   }
 
   .product-card {
@@ -383,7 +407,7 @@
 
       width: 100%;
       max-width: 650px;
-      height: 1098px;
+      height: auto;
     }
 
     .product-row {
@@ -395,6 +419,8 @@
       max-width: 305px;
       min-width: 305px;
       height: 481px;
+
+      margin: 0 auto;
 
       border: 1px solid $color-primary;
     }

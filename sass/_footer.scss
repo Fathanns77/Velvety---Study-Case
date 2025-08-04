@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
   }
-  
+
   &__logo {
     width: 176px;
 
@@ -36,6 +36,12 @@
 
     @media screen and (max-width: $bp-large) {
       height: 400px;
+    }
+
+    @media screen and (max-width: $bp-small) {
+      flex-wrap: wrap;
+      justify-content: center;
+      height: auto;
     }
   }
 
@@ -58,6 +64,13 @@
 
     @media screen and (max-width: $bp-large) {
       padding: 56px 0;
+    }
+
+    @media screen and (max-width: $bp-small) {
+      padding: 32px 40px;
+      height: fit-content;
+
+      border-top: 1px solid $color-primary;
     }
 
     &--heading {
@@ -103,6 +116,12 @@
       gap: 96px;
     }
 
+    @media screen and (max-width: $bp-small) {
+      height: auto;
+      gap: 64px;
+      padding: 32px 40px;
+    }
+
     &--item {
       display: flex;
       flex-direction: column;
@@ -122,6 +141,10 @@
         @media screen and (max-width: $bp-large) {
           font-size: 14px;
         }
+
+        @media screen and (max-width: $bp-small) {
+          font-size: 20px;
+        }
       }
 
       &__hours {
@@ -130,6 +153,9 @@
 
         @media screen and (max-width: $bp-large) {
           font-size: 16px;
+        }
+        @media screen and (max-width: $bp-small) {
+          font-size: 22px;
         }
       }
     }
@@ -161,6 +187,17 @@
 
     transform: rotate(90deg);
 
+    @media screen and (max-width: $bp-small) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: auto;
+      transform: none;
+      gap: 8px;
+      padding: 20px 0;
+      width: 100%;
+    }
+
     &--items-1 {
       font-size: 12px;
       padding-left: 133px;
@@ -169,12 +206,21 @@
       @media screen and (max-width: $bp-large) {
         padding-left: 115px;
       }
+      @media screen and (max-width: $bp-small) {
+        padding: 0;
+        text-align: center;
+      }
     }
     &--items-2 {
       font-size: 12px;
       padding-right: 133px;
 
       flex: none;
+
+      @media screen and (max-width: $bp-small) {
+        padding: 0;
+        text-align: center;
+      }
     }
   }
 
@@ -190,6 +236,18 @@
 
     background: $content-color-light-1;
     border-top: 1px solid $color-primary;
+
+    @media screen and (max-width: $bp-small) {
+      flex-direction: column;
+      gap: 32px;
+      height: auto;
+      padding: 32px 16px;
+    }
+
+    a {
+      text-decoration: none;
+      color: $color-primary-dark-3;
+    }
   }
 
   &__links {

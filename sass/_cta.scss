@@ -2,6 +2,10 @@
   background: $content-color-light-3;
   padding: 40px 80px;
 
+  @media only screen and (max-width: $bp-smallest) {
+    padding: 32px 16px;
+  }
+
   .container {
     width: 100%;
   }
@@ -11,6 +15,14 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    @media only screen and (max-width: $bp-smallest) {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      gap: 24px;
+    }
   }
 
   &__title {
@@ -18,6 +30,15 @@
     font-weight: 300;
     color: $content-color-light-1;
     font-family: $font-primary;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 70%;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 32px;
+      width: 100%;
+    }
   }
 
   &__icon {
@@ -127,6 +148,10 @@
   background: $content-color-light-3;
   padding: 40px 80px;
 
+  @media only screen and (max-width: $bp-smallest) {
+    padding: 40px 16px;
+  }
+
   .container {
     width: 100%;
   }
@@ -150,6 +175,14 @@
     @media (max-width: $bp-largest) {
       font-size: 64px;
     }
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 56px;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 40px;
+    }
   }
 
   &__form {
@@ -160,6 +193,10 @@
     max-width: 537px;
     height: 72px;
     color: $content-color-light-3;
+
+    @media only screen and (max-width: $bp-smallest) {
+      max-width: 255px;
+    }
   }
 
   &__input {
@@ -177,6 +214,11 @@
 
     font-size: 20px;
     letter-spacing: 1%;
+
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 0px;
+      padding-left: 4px;
+    }
   }
 
   &__button {

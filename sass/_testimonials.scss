@@ -5,6 +5,10 @@
   .container {
     width: 100%;
     padding-inline: 80px;
+
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 64px 16px;
+    }
   }
 
   &__wrapper {
@@ -26,6 +30,10 @@
       flex-direction: column;
       height: auto;
     }
+
+    @media only screen and (max-width: $bp-smallest) {
+      gap: 48px;
+    }
   }
 
   &__content {
@@ -42,8 +50,16 @@
       gap: 40px;
     }
 
+    @media only screen and (max-width: $bp-smallest) {
+      gap: 32px;
+    }
+
     &--title {
       color: $content-color-light-3;
+
+      @media only screen and (max-width: $bp-smallest) {
+        font-size: 24px;
+      }
     }
 
     &--text {
@@ -64,7 +80,8 @@
     padding-right: 28.89px;
 
     @media only screen and (max-width: $bp-largest) {
-      font-size: 30px;
+      font-size: 32px;
+      font-weight: 400;
     }
   }
 
@@ -102,6 +119,10 @@
     @media only screen and (max-width: $bp-largest) {
       width: 450px;
       height: auto;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      max-width: 343px;
     }
   }
 
@@ -159,6 +180,11 @@
       @media only screen and (max-width: $bp-medium) {
         width: 8px;
         height: 8px;
+      }
+
+      @media only screen and (max-width: $bp-smallest) {
+        width: 4px;
+        height: 4px;
       }
     }
   }

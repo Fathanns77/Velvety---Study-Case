@@ -13,6 +13,11 @@
     align-items: flex-start;
     padding: 96px 80px;
     gap: 96px;
+
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 96px 16px;
+      gap: 32px;
+    }
   }
 
   .aboutus {
@@ -21,6 +26,10 @@
     align-items: center;
     padding: 0px;
     gap: 26px;
+
+    @media only screen and (max-width: $bp-medium) {
+      flex-wrap: wrap;
+    }
 
     .headline {
       display: flex;
@@ -32,6 +41,10 @@
         color: $content-color-light-3;
         width: 100%;
         max-width: 616px;
+
+        @media only screen and (max-width: $bp-smallest) {
+          font-size: 24px;
+        }
       }
 
       &__subtitle {
@@ -40,6 +53,10 @@
 
         width: 100%;
         max-width: 566px;
+        
+        @media only screen and (max-width: $bp-smallest) {
+          font-size: 40px;
+        }
       }
     }
 
@@ -92,7 +109,12 @@
       @media only screen and (max-width: 1200px) {
         gap: 20px;
       }
+
+      .company--image {
+        @media only screen and (max-width: 1200px) {
+          width: 150px;
+        }
+      }
     }
   }
 }
-

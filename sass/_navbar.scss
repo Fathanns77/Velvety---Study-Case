@@ -4,10 +4,11 @@
   align-items: center;
   padding: 20px 80px;
   width: 100%;
-  // position: fixed;
-  // width: 100vw;
-
   z-index: 1000;
+
+  @media screen and (max-width: $bp-small) {
+    padding: 16px;
+  }
 
   &__logo {
     height: 44px;
@@ -19,6 +20,13 @@
     gap: 50px;
     justify-content: space-between;
     width: 595px;
+
+    @media screen and (max-width: $bp-small) {
+      justify-content: flex-end;
+      gap: 20px;
+      width: auto;
+      align-items: center;
+    }
   }
 }
 
@@ -27,6 +35,8 @@
   display: flex;
   list-style: none;
   gap: 48px;
+  margin: 0;
+  padding: 0;
 }
 
 .menu__items {
@@ -37,4 +47,57 @@
   font-size: 16px;
   line-height: 140%;
   font-style: normal;
+}
+
+/* SEMBUNYIKAN HAMBURGER DI VIEW BESAR */
+.hamburger {
+  display: none;
+}
+
+/* RESPONSIVE UNTUK bp-small */
+@media (max-width: $bp-small) {
+  .hide-sm {
+    display: none;
+  }
+
+  .show-sm {
+    display: inline-block;
+  }
+
+  .hamburger {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    background-color: $content-color-light-1;
+    border-radius: 50%;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 8px;
+  }
+
+  .hamburger::before,
+  .hamburger::after {
+    content: "";
+    position: absolute;
+    left: 6px;
+    right: 6px;
+    height: 2px;
+    background-color: $content-color-dark-2;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+  
+  .hamburger::before {
+    top: 0;
+    transform: translateY(5px);
+    display: none;
+  }
+
+  .hamburger::after {
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 -5px 0 0 $content-color-dark-2,
+      0 5px 0 0 $content-color-dark-2;
+  }
 }

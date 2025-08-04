@@ -1,16 +1,27 @@
 .try-service {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 181px;
-  padding: 96px 80px;
   background-color: $content-color-light-1;
   border-top: 1px solid $color-primary;
   border-bottom: 1px solid $color-primary;
+  padding: 96px 0;
 
-  @media only screen and (max-width: $bp-medium) {
-    flex-direction: column;
+  .container {
+    max-width: map-get($container-max-widths, xxl);
+    height: auto;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 181px;
+    padding: 0 80px;
+
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+    }
   }
 
   &__image {

@@ -44,12 +44,6 @@
     @media only screen and (max-width: $bp-medium) {
       flex-direction: row;
     }
-  }
-
-  &__left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
     .hero__product {
       position: absolute;
@@ -65,13 +59,20 @@
       @media only screen and (max-width: $bp-medium) {
         left: -60px;
       }
-    }
-  }
 
-  &__right {
-    width: 100%;
-    max-width: 730px;
-    height: 100%;
+      @media only screen and (max-width: $bp-small) {
+        position: relative;
+        order: 1;
+        height: auto;
+        left: unset;
+        top: unset;
+      }
+
+      @media only screen and (max-width: $bp-smallest) {
+        width: 100%;
+        max-width: 178px;
+      }
+    }
 
     .hero__headline {
       max-width: 100%;
@@ -86,19 +87,38 @@
       @media only screen and (max-width: $bp-largest) {
         font-size: 90px;
       }
+
       @media only screen and (max-width: 1100px) {
         font-size: 80px;
       }
+
       @media only screen and (max-width: $bp-large) {
         font-size: 75px;
         left: 420px;
         max-width: 550px;
       }
+
       @media only screen and (max-width: $bp-medium) {
         left: 330px;
         width: 50%;
-
         text-align: none;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        position: relative;
+        font-size: 72px;
+        line-height: 1.2;
+        text-align: center;
+        width: 120%;
+        height: auto;
+        top: unset;
+        left: unset;
+      }
+
+      @media only screen and (max-width: $bp-smallest) {
+        font-size: 48px;
+        width: 100%;
+        max-width: max-content;
       }
     }
 
@@ -115,6 +135,18 @@
 
       @media only screen and (max-width: $bp-medium) {
         left: 330px;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        position: relative;
+        text-align: center;
+        left: unset;
+        top: unset;
+      }
+
+      @media only screen and (max-width: $bp-smallest) {
+        width: 100%;
+        max-width: 192px;
       }
     }
   }
@@ -135,11 +167,23 @@
       top: 56vh;
     }
 
+    @media only screen and (max-width: $bp-small) {
+      position: relative;
+      flex-direction: row;
+      top: unset;
+      left: unset;
+      order: 2;
+    }
+
     .arrow {
       width: 30.11px;
       height: 18.47px;
 
       @media only screen and (max-width: $bp-medium) {
+        display: none;
+      }
+
+      @media only screen and (max-width: $bp-small) {
         display: none;
       }
     }
@@ -154,16 +198,37 @@
         flex-direction: row;
       }
 
+      @media only screen and (max-width: $bp-small) {
+        flex-direction: row;
+        gap: 8px;
+      }
+
       span {
         width: 4px;
         height: 4px;
         transform: rotate(45deg);
         background-color: $color-primary-light;
+
+        @media only screen and (max-width: $bp-small) {
+          width: 6px;
+          height: 6px;
+        }
       }
 
       .dot1 {
         background-color: $content-color-dark-1 !important;
       }
+    }
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    &__content {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+      gap: 16px;
+      margin-top: 30px;
     }
   }
 }
