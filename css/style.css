@@ -1626,6 +1626,7 @@ body {
 }
 .footer__designed {
   font-size: 18px;
+  text-align: center;
 }
 .footer__links {
   display: flex;
