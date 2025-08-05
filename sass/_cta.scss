@@ -60,6 +60,10 @@
   padding: 96px 80px;
   margin: 0 auto;
   box-sizing: border-box;
+
+  @media only screen and (max-width: $bp-smallest) {
+    flex-direction: column;
+  }
 }
 
 .cta02 {
@@ -78,6 +82,10 @@
     min-width: 260px;
     height: 242px;
     box-sizing: border-box;
+
+    @media only screen and (max-width: $bp-smallest) {
+      gap: 16px;
+    }
   }
 
   .head-text {
@@ -116,19 +124,36 @@
   &__text {
     color: $content-color-dark-2;
   }
+
+  @media only screen and (max-width: $bp-smallest) {
+    border: none;
+  }
 }
 
 .cta02__separator {
   flex: 0 0 1px;
   height: 88px;
   background: #d9d9d9;
+
+  @media only screen and (max-width: $bp-small) {
+    width: 88px;
+    height: 1px;
+    align-self: center;
+    display: none;
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    width: 88px;
+    height: 1px;
+    align-self: center;
+    display: block;
+  }
 }
 
 @media (max-width: $bp-largest) {
   .cta02-wrapper {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
+    gap: 48px;
     padding: 64px 24px;
   }
 
@@ -137,10 +162,6 @@
     max-width: 320px;
     min-width: 200px;
     height: auto;
-  }
-
-  .cta02__separator {
-    display: none;
   }
 }
 

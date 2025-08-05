@@ -4,6 +4,13 @@
   border-bottom: 1px solid $color-primary;
   padding: 96px 0;
 
+  @media only screen and (max-width: $bp-medium) {
+    padding: 96px 0;
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    padding: 0;
+  }
+
   .container {
     max-width: map-get($container-max-widths, xxl);
     height: auto;
@@ -21,6 +28,11 @@
 
     @media only screen and (max-width: $bp-medium) {
       flex-direction: column;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 64px 16px;
+      gap: 48px;
     }
   }
 
@@ -56,18 +68,32 @@
       font-size: 28px;
       font-weight: 300;
       color: $content-color-light-3;
+
+      @media only screen and (max-width: $bp-smallest) {
+        font-size: 24px;
+      }
     }
 
     &--title {
       font-size: 56px;
       font-weight: 300;
       color: $content-color-dark-2;
+
+      @media only screen and (max-width: $bp-smallest) {
+        font-size: 38px;
+      }
     }
 
     &--subtitle {
       font-size: 20px;
       font-weight: 300;
       color: $content-color-dark-1;
+    }
+
+    .hide-text {
+      @media only screen and (max-width: $bp-smallest) {
+        display: none;
+      }
     }
 
     .shop-cta {
