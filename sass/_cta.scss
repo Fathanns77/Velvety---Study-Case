@@ -15,6 +15,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateX(5px);
+    }
 
     @media only screen and (max-width: $bp-smallest) {
       flex-direction: column;
@@ -120,6 +125,12 @@
   height: 52px;
   border: 1px solid $content-color-dark-2;
   text-decoration: none;
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $color-primary-light;
+  }
 
   &__text {
     color: $content-color-dark-2;

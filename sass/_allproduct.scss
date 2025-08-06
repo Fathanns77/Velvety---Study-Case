@@ -176,6 +176,7 @@
   }
 
   .shop-cta {
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -187,8 +188,14 @@
     max-width: max-content;
     height: 52px;
     border: 1px solid $content-color-dark-2;
-
     text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    
+    * {
+      position: relative;
+      z-index: 2;
+    }
 
     &__text {
       color: $content-color-dark-2;
@@ -198,6 +205,31 @@
     &__icon {
       width: 30.11px;
       height: 18.47px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 3px;
+      background-color: $color-primary;
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
+        background-color 0.1s;
+      z-index: 0;
+    }
+
+    &:hover::before,
+    &--active::before {
+      transform: scaleY(1);
+      width: 100%;
+    }
+
+    &:active::before {
+      background-color: $color-primary-light;
     }
   }
 }
@@ -561,8 +593,8 @@
       font-size: 22px;
     }
 
-    .shop-cta { 
-      align-self: flex-start ;
+    .shop-cta {
+      align-self: flex-start;
     }
   }
 }

@@ -60,6 +60,12 @@
       gap: 24px;
 
       width: 480px;
+
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(0.95);
+      }
     }
 
     .product-card__desc {
@@ -145,6 +151,12 @@
       border-width: 0px 1px;
       border-style: solid;
       border-color: $color-primary;
+
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(0.95);
+      }
 
       @media only screen and (max-width: $bp-medium) {
         padding-top: 24px;
@@ -327,8 +339,8 @@
     .product-card,
     .product-card-2 {
       width: 100%;
-     max-width: 375px;
-     padding: 20px;
+      max-width: 375px;
+      padding: 20px;
     }
 
     .product-card__desc {
@@ -337,7 +349,7 @@
       align-items: flex-start;
       gap: 12px;
       width: 100%;
-      max-width: 375px;;
+      max-width: 375px;
 
       .desc--nameprice {
         display: flex;

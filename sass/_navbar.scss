@@ -30,6 +30,14 @@
   }
 }
 
+.nav__checkbox {
+  display: none;
+}
+
+.nav__mobile {
+  display: none;
+}
+
 .nav__menu--1,
 .nav__menu--2 {
   display: flex;
@@ -64,6 +72,11 @@
     display: inline-block;
   }
 
+  /* Sembunyikan checkbox */
+  .nav__checkbox {
+    display: none;
+  }
+
   .hamburger {
     display: inline-block;
     width: 32px;
@@ -71,9 +84,11 @@
     position: relative;
     background-color: $content-color-light-1;
     border-radius: 50%;
-    box-sizing: border-box;
     cursor: pointer;
     padding: 8px;
+    box-sizing: border-box;
+
+    z-index: 2000;
   }
 
   .hamburger::before,
@@ -87,11 +102,10 @@
     border-radius: 2px;
     transition: all 0.3s ease;
   }
-  
+
   .hamburger::before {
-    top: 0;
-    transform: translateY(5px);
-    display: none;
+    top: 1px;
+    transform: translateY(9px);
   }
 
   .hamburger::after {
@@ -99,5 +113,126 @@
     transform: translateY(-50%);
     box-shadow: 0 -5px 0 0 $content-color-dark-2,
       0 5px 0 0 $content-color-dark-2;
+  }
+
+  /* Ubah jadi X saat checkbox dicentang */
+  .nav__checkbox:checked + .hamburger {
+    background-color: $content-color-light-3;
+
+    &::before {
+      top: 50%;
+      transform: rotate(45deg);
+      box-shadow: none;
+      background-color: $content-color-light-1;
+    }
+
+    &::after {
+      top: 50%;
+      transform: rotate(-45deg);
+      box-shadow: none;
+      background-color: $content-color-light-1;
+    }
+  }
+}
+
+@media (max-width: $bp-small) {
+  .nav__mobile {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: $content-color-light-1;
+    z-index: 1500;
+
+    &-logo {
+      padding: 16px 14px;
+      padding-right: 60px;
+      border-width: 1px 0px;
+      border-style: solid;
+      border-color: $color-primary;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      z-index: 1000;
+
+      .nav-logo {
+        height: 44px;
+        width: 137px;
+      }
+    }
+
+    .nav-mobile-item {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+    }
+
+    .menu__items-logo {
+      text-transform: uppercase;
+      color: $content-color-light-3;
+    }
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      padding: 20px;
+    }
+
+    &-item {
+      list-style: none;
+
+      a {
+        font-size: 40px;
+        text-decoration: none;
+        color: $color-primary-dark-2;
+        font-family: $font-primary;
+        font-weight: 300;
+      }
+    }
+
+    &-login {
+      margin-top: auto;
+      margin-bottom: 32px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      width: 92%;
+      justify-content: center;
+      align-items: center;
+      margin-inline: auto;
+      gap: 10px;
+
+      height: 52px;
+      border: 1px solid $content-color-dark-2;
+      text-decoration: none;
+      z-index: 1;
+
+      &__text {
+        color: $content-color-dark-2;
+        line-height: 140%;
+      }
+    }
+  }
+
+  .nav__checkbox:checked ~ .nav__mobile {
+    display: flex;
+    opacity: 1;
+    pointer-events: all;
   }
 }

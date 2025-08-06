@@ -97,24 +97,31 @@
     }
 
     &__company {
-      display: flex;
-      flex-shrink: 1;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
+  display: flex;
+  flex-shrink: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 
-      width: 100%;
+  width: 100%;
 
-      @media only screen and (max-width: 1200px) {
-        gap: 20px;
-      }
+  @media only screen and (max-width: 1200px) {
+    gap: 20px;
+  }
 
-      .company--image {
-        @media only screen and (max-width: 1200px) {
-          width: 150px;
-        }
-      }
+  .company--image {
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
     }
+
+    @media only screen and (max-width: 1200px) {
+      width: 150px;
+    }
+  }
+}
+
   }
 }

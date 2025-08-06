@@ -20,20 +20,62 @@
         <!-- NAVIGATION -->
         <nav class="nav">
           <img src="img/Logo small.svg" alt="logo" class="nav__logo" />
+
           <div class="nav__menu">
             <ul class="nav__menu--1">
-              <li class="menu__items show-sm">Shop</li>
-              <li class="menu__items hide-sm">Page</li>
-              <li class="menu__items hide-sm">About</li>
+              <li class="menu__items show-sm"><a href="#">Shop</a></li>
+              <li class="menu__items hide-sm"><a href="#">Page</a></li>
+              <li class="menu__items hide-sm"><a href="#">About</a></li>
             </ul>
             <ul class="nav__menu--2">
-              <li class="menu__items hide-sm">Login</li>
-              <li class="menu__items show-sm">Cart (0)</li>
+              <li class="menu__items hide-sm"><a href="#">Login</a></li>
+              <li class="menu__items show-sm"><a href="#">Cart (0)</a></li>
             </ul>
 
-            <div class="hamburger"></div>
+            <!-- Checkbox dan hamburger (sudah kamu punya) -->
+            <input type="checkbox" id="nav-toggle" class="nav__checkbox" />
+            <label for="nav-toggle" class="hamburger"></label>
+
+            <!-- MENU MOBILE (TAMBAHAN SAJA) -->
+            <!-- Menu Mobile -->
+            <div class="nav__mobile">
+              <div class="nav__mobile-logo">
+                <img src="img/Logo Mobile.svg" alt="logo" class="nav-logo" />
+                <div class="nav-mobile-item">
+                  <ul class="nav__mobile-logo__menu">
+                    <li class="menu__items-logo show-sm"><a href="#">Shop</a></li>
+                  </ul>
+                  <ul class="nav__mobile-logo__menu">
+                    <li class="menu__items-logo show-sm"><a href="#">Cart (0)</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="nav__mobile-wrapper">
+                <ul class="nav__mobile-list">
+                  <li class="nav__mobile-item">
+                    <label for="nav-toggle"><a href="#">Shop</a></label>
+                  </li>
+                  <li class="nav__mobile-item">
+                    <label for="nav-toggle"><a href="#">Page</a></label>
+                  </li>
+                  <li class="nav__mobile-item">
+                    <label for="nav-toggle"><a href="#">About</a></label>
+                  </li>
+                  <li class="nav__mobile-item">
+                    <label for="nav-toggle"><a href="#">Cart (0)</a></label>
+                  </li>
+                </ul>
+
+                <a href="#" class="nav__mobile-login">
+                  <span class="nav__mobile-login__text">Login</span>
+                </a>
+              </div>
+            </div>
+
           </div>
         </nav>
+
+
 
         <!-- HERO CONTENT -->
         <div class="hero__content">
@@ -127,7 +169,9 @@
       <!-- Product 1 -->
       <div class="product-card">
         <div class="product-card__image">
-          <img src="img/Product Image.png" alt="Velvety Chicori"/>
+          <a href="#">
+            <img src="img/Product Image.png" alt="Velvety Chicori" />
+          </a>
         </div>
         <div class="product-card__desc">
           <div class="desc--nameprice">
@@ -150,7 +194,9 @@
       <!-- Product 2 -->
       <div class="product-card-2">
         <div class="product-card__image">
-          <img src="img/Product Image 2.png" alt="Velvety Notorious" />
+          <a href="#">
+            <img src="img/Product Image 2.png" alt="Velvety Notorious" />
+          </a>
         </div>
         <div class="product-card__desc">
           <div class="desc--nameprice">
@@ -173,7 +219,9 @@
       <!-- Product 3 -->
       <div class="product-card">
         <div class="product-card__image">
-          <img src="img/Product Image 3.png" alt="Velvety Holocena" />
+          <a href="#">
+            <img src="img/Product Image 3.png" alt="Velvety Holocena" />
+          </a>
         </div>
         <div class="product-card__desc">
           <div class="desc--nameprice">
@@ -225,19 +273,29 @@
           <p class="asseenis__title">As seen in</p>
           <div class="asseenis__company">
             <div class="company">
-              <img src="img/company01.png" class="company--image" alt="Vogue Logo" />
+              <a href="https://www.vogue.com/">
+                <img src="img/company01.png" class="company--image" alt="Vogue Logo" />
+              </a>
             </div>
             <div class="company">
-              <img src="img/company02.png" class="company--image" alt="Forbes Logo" />
+              <a href="https://www.forbes.com/">
+                <img src="img/company02.png" class="company--image" alt="Forbes Logo" />
+              </a>
             </div>
             <div class="company">
-              <img src="img/company03.png" class="company--image" alt="Thought Catalog Logo" />
+              <a href="https://thoughtcatalog.com/">
+                <img src="img/company03.png" class="company--image" alt="Thought Catalog Logo" />
+              </a>
             </div>
             <div class="company">
-              <img src="img/company04.png" class="company--image" alt="Women's Health Logo" />
+              <a href="https://www.womenshealthmag.com/">
+                <img src="img/company04.png" class="company--image" alt="Women's Health Logo" />
+              </a>
             </div>
             <div class="company">
-              <img src="img/company05.png" class="company--image" alt="WWD Logo" />
+              <a href="https://wwd.com/">
+                <img src="img/company05.png" class="company--image" alt="WWD Logo" />
+              </a>
             </div>
           </div>
         </div>
@@ -249,9 +307,11 @@
   <section class="cta">
     <div class="container">
       <div class="cta__wrapper">
-        <h4 class="cta__title">
-          Let’s see the processing of our products
-        </h4>
+        <a href="#">
+          <h4 class="cta__title">
+            Let’s see the processing of our products
+          </h4>
+        </a>
         <img src="img/Arrow-Right.svg" alt="arrow right" class="cta__icon" />
       </div>
     </div>
@@ -305,79 +365,87 @@
         <div class="all-products__right">
           <!-- Product Rows -->
           <div class="product-row">
-            <div class="product-card">
-              <img src="img/product 1.png" alt="CLASSYWIG" class="product__image">
-              <div class="product__desc">
-                <h6 class="product__name">CLASSYWIG</h6>
-                <p class="product__price">$20</p>
-                <div class="rating2">
-                  <div class="product-rating__stars">
-                    <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
-                    <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
-                    <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
-                    <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
-                    <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+            <a href="#">
+              <div class="product-card">
+                <img src="img/product 1.png" alt="CLASSYWIG" class="product__image">
+                <div class="product__desc">
+                  <h6 class="product__name">CLASSYWIG</h6>
+                  <p class="product__price">$20</p>
+                  <div class="rating2">
+                    <div class="product-rating__stars">
+                      <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+                      <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+                      <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+                      <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+                      <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+                    </div>
+                    <p class="ratings_number">5.0</p>
                   </div>
-                  <p class="ratings_number">5.0</p>
                 </div>
               </div>
-            </div>
+            </a>
 
-            <div class="product-card">
-              <img src="img/product 2.png" alt="HOLCANE" class="product__image">
-              <div class="product__desc">
-                <h6 class="product__name">HOLOCANE</h6>
-                <p class="product__price">$23</p>
-                <div class="rating2">
-                  <div class="product-rating__stars">
-                    <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
-                    <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
-                    <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
-                    <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
-                    <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+            <a href="#">
+              <div class="product-card">
+                <img src="img/product 2.png" alt="HOLCANE" class="product__image">
+                <div class="product__desc">
+                  <h6 class="product__name">HOLOCANE</h6>
+                  <p class="product__price">$23</p>
+                  <div class="rating2">
+                    <div class="product-rating__stars">
+                      <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+                      <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+                      <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+                      <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+                      <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+                    </div>
+                    <p class="ratings_number">5.0</p>
                   </div>
-                  <p class="ratings_number">5.0</p>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
 
           <div class="product-row">
-            <div class="product-card">
-              <img src="img/product 3.png" alt="INAMORATA" class="product__image">
-              <div class="product__desc">
-                <h6 class="product__name">INAMORATA</h6>
-                <p class="product__price">$12</p>
-                <div class="rating2">
-                  <div class="product-rating__stars">
-                    <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
-                    <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
-                    <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
-                    <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
-                    <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+            <a href="#">
+              <div class="product-card">
+                <img src="img/product 3.png" alt="INAMORATA" class="product__image">
+                <div class="product__desc">
+                  <h6 class="product__name">INAMORATA</h6>
+                  <p class="product__price">$12</p>
+                  <div class="rating2">
+                    <div class="product-rating__stars">
+                      <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+                      <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+                      <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+                      <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+                      <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+                    </div>
+                    <p class="ratings_number">5.0</p>
                   </div>
-                  <p class="ratings_number">5.0</p>
                 </div>
               </div>
-            </div>
+            </a>
 
-            <div class="product-card">
-              <img src="img/product 4.png" alt="LIGHTCOOL" class="product__image">
-              <div class="product__desc">
-                <h6 class="product__name">LIGHTCOOL</h6>
-                <p class="product__price">$22.5</p>
-                <div class="rating2">
-                  <div class="product-rating__stars">
-                    <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
-                    <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
-                    <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
-                    <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
-                    <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+            <a href="#">
+              <div class="product-card">
+                <img src="img/product 4.png" alt="LIGHTCOOL" class="product__image">
+                <div class="product__desc">
+                  <h6 class="product__name">LIGHTCOOL</h6>
+                  <p class="product__price">$22.5</p>
+                  <div class="rating2">
+                    <div class="product-rating__stars">
+                      <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+                      <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+                      <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+                      <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+                      <span class="star"><img src="img/Star.svg" alt="Star Icon"></span>
+                    </div>
+                    <p class="ratings_number">5.0</p>
                   </div>
-                  <p class="ratings_number">5.0</p>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
 
           <a href="#" class="shop-cta">
@@ -614,6 +682,7 @@
       </div>
     </div>
   </footer>
+
 
 </body>
 
