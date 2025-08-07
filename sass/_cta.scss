@@ -7,6 +7,7 @@
   }
 
   .container {
+    cursor: pointer;
     width: 100%;
   }
 
@@ -237,6 +238,7 @@
     align-items: center;
     padding: 0px 24px;
     gap: 10px;
+    outline: none;
 
     width: 450px;
     height: 72px;
@@ -268,6 +270,13 @@
     border-width: 1px 1px 1px 0px;
     border-style: solid;
     border-color: $color-primary;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $color-primary;
+    }
 
     .arrow-cta {
       width: 47.84px;

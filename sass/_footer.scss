@@ -62,6 +62,10 @@
     border-style: solid;
     border-color: $color-primary;
 
+    @media screen and (max-width: $bp-largest) {
+      flex-basis: 300px;
+    }
+
     @media screen and (max-width: $bp-large) {
       padding: 56px 0;
     }
@@ -245,6 +249,10 @@
 
     background: $content-color-light-1;
     border-top: 1px solid $color-primary;
+
+    @media screen and (max-width: $bp-medium) {
+      padding: 20px;
+    }
 
     @media screen and (max-width: $bp-small) {
       flex-direction: column;

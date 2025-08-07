@@ -19,12 +19,14 @@
       <div class="hero-wrapper">
         <!-- NAVIGATION -->
         <nav class="nav">
-          <img src="img/Logo small.svg" alt="logo" class="nav__logo" />
+          <a href="#">
+            <img src="img/Logo small.svg" alt="logo" class="nav__logo" />
+          </a>
 
           <div class="nav__menu">
             <ul class="nav__menu--1">
-              <li class="menu__items show-sm"><a href="#">Shop</a></li>
               <li class="menu__items hide-sm"><a href="#">Page</a></li>
+              <li class="menu__items show-sm"><a href="#">Shop</a></li>
               <li class="menu__items hide-sm"><a href="#">About</a></li>
             </ul>
             <ul class="nav__menu--2">
@@ -52,11 +54,12 @@
               </div>
               <div class="nav__mobile-wrapper">
                 <ul class="nav__mobile-list">
-                  <li class="nav__mobile-item">
-                    <label for="nav-toggle"><a href="#">Shop</a></label>
+                  <li class="nav__mobile-item item-andsvg">
+                    <label for="nav-toggle"><a href="#">Pages</a></label>
+                    <img src="img/arrow-down.svg" alt="arrow down">
                   </li>
                   <li class="nav__mobile-item">
-                    <label for="nav-toggle"><a href="#">Page</a></label>
+                    <label for="nav-toggle"><a href="#">Shop</a></label>
                   </li>
                   <li class="nav__mobile-item">
                     <label for="nav-toggle"><a href="#">About</a></label>
@@ -683,6 +686,19 @@
     </div>
   </footer>
 
+
+
+  <script>
+    const checkbox = document.getElementById('nav-toggle');
+
+    checkbox.addEventListener('change', function () {
+      if (this.checked) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = '';
+      }
+    });
+  </script>
 
 </body>
 

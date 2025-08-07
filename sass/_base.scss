@@ -17,40 +17,41 @@ $container-max-widths: (
   md: 720px,
   lg: 960px,
   xl: 1200px,
-  xxl: 1440px
+  xxl: 1440px,
 );
 
 $bp-largest: 1200px;
 $bp-large: 1024px;
 $bp-medium: 992px;
 $bp-small: 768px;
-$bp-smallest: 558px;
+$bp-smallest: 577px;
+$bp-mobile: 375px;
 
-$font-secondary: 'Aileron', sans-serif;
-$font-primary: 'IvyMode', sans-serif;
+$font-secondary: "Aileron", sans-serif;
+$font-primary: "IvyMode", sans-serif;
 
 /* IvyMode - Light */
 @font-face {
-    font-family: 'IvyMode';
-    src: url('fonts/IvyMode_Light.otf') format('opentype');
+  font-family: "IvyMode";
+  src: url("fonts/IvyMode_Light.otf") format("opentype");
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    color: $content-color-dark-1;
-    font-family: $font-secondary;   
-    font-weight: 400;
-    background-color: $content-color-light-1;
+  color: $content-color-dark-1;
+  font-family: $font-secondary;
+  font-weight: 400;
+  background-color: $content-color-light-1;
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 .container {
