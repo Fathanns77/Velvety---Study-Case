@@ -81,6 +81,10 @@ h6 {
   width: max-content;
   height: 52px;
 
+  font-size: 18px;
+  font-family: $font-secondary;
+  color: $content-color-light-3;
+
   border: 1px solid $color-primary;
   border-radius: 40px;
 
@@ -106,8 +110,14 @@ h6 {
   gap: 10px;
   white-space: nowrap;
 
-  width: max-content;
+  width: 100%;
+  max-width: 128px;
   height: 52px;
+
+  font-size: 18px;
+  font-weight: 600;
+  font-family: $font-secondary;
+  color: $content-color-dark-2;
 
   border: 1px solid $color-primary;
   border-radius: 40px;

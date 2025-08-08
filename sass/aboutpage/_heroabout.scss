@@ -1,0 +1,92 @@
+.heroabout {
+  background-color: $content-color-light-3;
+  position: relative;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/about/hero-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .container {
+    max-width: map-get($container-max-widths, xxl);
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .heroabout-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    &-content {
+      justify-items: center;
+      padding-top: 44px;
+      position: relative;
+
+      .content__headline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 16px;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        z-index: 0;
+
+        .content__headline-title {
+          width: 100%;
+          max-width: 1043.67px;
+
+          font-size: 108px;
+          text-align: center;
+          font-weight: 300;
+          font-family: $font-primary;
+          color: $content-color-light-1;
+        }
+
+        .content__headline-sub {
+          width: 100%;
+          max-width: 743.37px;
+
+          font-size: 20px;
+          text-align: center;
+          font-weight: 300;
+          font-family: $font-primary;
+          color: $content-color-light-1;
+        }
+      }
+
+      .content__img {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .ilustrationsleft {
+      position: absolute;
+      width: 100%;
+      max-width: 335px;
+      left: 64px;
+      bottom: 92.15px;
+    }
+
+    .ilustrationsright {
+      position: absolute;
+      width: 100%;
+      max-width: 335px;
+      left: 1041px;
+      bottom: 92.15px;
+    }
+
+  }
+}

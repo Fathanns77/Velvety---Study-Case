@@ -1,12 +1,21 @@
-@import "base";
-@import "about";
-@import "allproduct";
-@import "cta";
-@import "testimonials";
-@import "featured";
-@import "footer";
-@import "hero";
-@import "ingredients";
-@import "navbar";
-@import "services";
-@import "typography";
+// 1. Base styles
+@import "base/base";
+@import "base/typography";
+
+// 2. Landingg Page
+@import "landingpage/navbar";
+@import "landingpage/hero";
+@import "landingpage/featured";
+@import "landingpage/allproduct";
+@import "landingpage/about";
+@import "landingpage/services";
+@import "landingpage/footer";
+@import "landingpage/ingredients";
+
+// 3. About Page
+@import "aboutpage/heroabout";
+@import "aboutpage/aboutus";
+
+//Components
+@import "components/cta";
+@import "components/testimonials";

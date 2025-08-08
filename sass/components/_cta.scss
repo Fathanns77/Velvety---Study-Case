@@ -1,13 +1,13 @@
 .cta {
   background: $content-color-light-3;
   padding: 40px 80px;
+  cursor: pointer;
 
   @media only screen and (max-width: $bp-smallest) {
     padding: 32px 16px;
   }
 
   .container {
-    cursor: pointer;
     width: 100%;
   }
 
