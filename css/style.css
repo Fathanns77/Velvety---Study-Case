@@ -2582,6 +2582,314 @@ h6 {
   line-height: 140%;
 }
 
+.explore .container {
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.explore__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding: 96px 80px;
+}
+.explore__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  gap: 56px;
+}
+.explore__content-headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.explore__content-headline .headline__main {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 110%;
+  color: #899f87;
+}
+.explore__content-headline .headline__sub {
+  width: 100%;
+  max-width: 538.33px;
+  font-size: 56px;
+  font-weight: 300;
+  line-height: 120%;
+  letter-spacing: 1%;
+  text-align: center;
+  color: #213721;
+}
+.explore__content-slider {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.explore__content-slider .slider__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.explore__content-slider .slider__title-head {
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: 120%;
+  font-family: "IvyMode", sans-serif;
+  color: #213721;
+}
+.explore__content-slider .slider__title-navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+}
+.explore__content-slider .slider__listing {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  overflow: auto;
+}
+.explore__content-slider .slider__listing::-webkit-scrollbar {
+  display: none;
+}
+.explore__content-slider .slider__listing-product {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #c8d8c0;
+}
+.explore__content-slider .slider__listing .product__image {
+  height: 100%;
+  max-height: 320px;
+}
+.explore__content-slider .slider__listing .product__desc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 24px;
+  border-top: 1px solid #c8d8c0;
+}
+.explore__content-slider .slider__listing .product__desc-name {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #213721;
+}
+.explore__content-slider .slider__listing .product__desc-price {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+.explore__content-slider .slider__listing .product__desc-price .price__discount {
+  font-size: 22px;
+  font-weight: 300;
+  text-decoration: line-through;
+  color: #899f87;
+}
+.explore__content-slider .slider__listing .product__desc-price .price__fixed {
+  font-size: 22px;
+  font-weight: 700;
+  color: #213721;
+}
+.explore__content-slider .slider__listing .product__desc-rating {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+}
+.explore__content-slider .slider__listing .product__desc-rating .rating__star {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+.explore__content-slider .slider__listing .product__desc-rating .rating__star .star {
+  width: 20px;
+  height: 20px;
+}
+.explore__content-slider .slider__listing .product__desc-rating .rating__number {
+  font-size: 22px;
+  letter-spacing: 140%;
+  color: #3c5e39;
+}
+.explore__content-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  gap: 10px;
+  width: 100%;
+  height: 52px;
+  max-width: 229.11px;
+  border: 1px solid #213721;
+  font-size: 16px;
+  color: #213721;
+  transition: all 0.3s;
+}
+.explore__content-button:hover {
+  background-color: hsl(115, 11%, 80%);
+}
+
+.value {
+  background-color: #899f87;
+}
+.value .container {
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.value__wrapper {
+  position: relative;
+}
+.value__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  padding: 56px 80px;
+  gap: 64px;
+}
+.value__content .value__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.value__content .value__item-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.value__content .value__item-desc .desc__main {
+  font-size: 28px;
+  font-weight: 300;
+  color: #f2f6ef;
+}
+.value__content .value__item-desc .desc__sub {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 140%;
+  text-align: center;
+  color: #e4ece0;
+}
+.value__content .sparation {
+  flex: 0 0 1px;
+  height: 88px;
+  background: #c8d8c0;
+  align-self: center;
+}
+
+.team .container {
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.team__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding: 96px 80px;
+}
+.team__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  gap: 56px;
+}
+.team__content .team__headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.team__content .team__headline-main {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 110%;
+  color: #899f87;
+}
+.team__content .team__headline-sub {
+  font-size: 56px;
+  font-weight: 300;
+  line-height: 120%;
+  letter-spacing: 1%;
+  text-align: center;
+  width: 100%;
+  max-width: 669.75px;
+  color: #213721;
+}
+.team__content .team__container {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+.team__content .team__container-row {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}
+.team__content .team__container-row .team__card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.team__content .team__container-row .team__card-name {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  /* Garis vertikal */
+}
+.team__content .team__container-row .team__card-name .name {
+  font-size: 30px;
+  line-height: 120%;
+  color: #213721;
+}
+.team__content .team__container-row .team__card-name .position {
+  font-size: 20px;
+  line-height: 140%;
+  color: #899f87;
+}
+.team__content .team__container-row .team__card-name .icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+.team__content .team__container-row .team__card-name .icon::before,
+.team__content .team__container-row .team__card-name .icon::after {
+  content: "";
+  position: absolute;
+  background-color: #213721;
+  border-radius: 20px;
+}
+.team__content .team__container-row .team__card-name .icon::before {
+  top: 50%;
+  left: 50%;
+  width: 19.2px;
+  height: 1.5px;
+  transform: translate(-50%, -50%);
+  will-change: transform;
+}
+.team__content .team__container-row .team__card-name .icon::after {
+  left: 50%;
+  top: 50%;
+  width: 1.5px;
+  height: 19.2px;
+  transform: translate(-50%, -50%);
+  will-change: transform;
+}
+.team__content .team__container-row .team__card .sparation {
+  flex: 0 0 1px;
+  height: 100%;
+  background-color: #c8d8c0;
+}
+
 .cta {
   background: #899f87;
   padding: 40px 80px;
