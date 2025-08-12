@@ -11,6 +11,7 @@ $content-color-light-3: #899f87;
 
 $content-color-dark-1: #3c5e39;
 $content-color-dark-2: #213721;
+$content-color-dark-3: #617C5F;
 
 $content-color-light-4: #738c71; 
 
@@ -42,6 +43,11 @@ $font-primary: "IvyMode", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  ::selection {
+  background: $color-primary;
+}
+
 }
 
 body {
