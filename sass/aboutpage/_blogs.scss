@@ -7,6 +7,10 @@
 
   &__wrapper {
     padding: 96px 80px;
+
+    @media screen and (max-width: $bp-mobilelarge) {
+      padding: 64px 16px;
+    }
   }
 
   &__content {
@@ -29,6 +33,10 @@
           font-weight: 300;
           line-height: 110%;
           color: $content-color-light-3;
+
+          @media screen and (max-width: $bp-mobilelarge) {
+            font-size: 24px;
+          }
         }
 
         &-sub {
@@ -37,6 +45,10 @@
           letter-spacing: 1%;
 
           color: $content-color-dark-2;
+
+          @media screen and (max-width: $bp-mobilelarge) {
+            font-size: 40px;
+          }
         }
       }
 
@@ -45,6 +57,10 @@
         flex-direction: row;
         gap: 32px;
         align-items: flex-end;
+
+        @media screen and (max-width: $bp-mobilelarge) {
+          display: none;
+        }
       }
     }
 
@@ -59,12 +75,20 @@
         display: none;
       }
 
+      @media screen and (max-width: $bp-mobilelarge) {
+        gap: 24px;
+      }
+
       .row__card {
         display: flex;
         flex-direction: column;
         width: 100%;
         max-width: 308px;
         gap: 24px;
+
+        @media screen and (max-width: $bp-mobilelarge) {
+          max-width: 280px;
+        }
 
         &-desc {
           display: flex;

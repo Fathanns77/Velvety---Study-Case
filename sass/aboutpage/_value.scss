@@ -17,8 +17,17 @@
     justify-content: center;
     position: relative;
 
+    @media screen and (max-width: $bp-small) {
+      flex-direction: column;
+    }
+
     padding: 56px 80px;
     gap: 64px;
+
+    @media screen and (max-width: $bp-mobilelarge) {
+      padding: 56px 16px;
+      gap: 32px;
+    }
 
     .value__item {
       display: flex;
@@ -46,6 +55,11 @@
           text-align: center;
 
           color: $color-primary-light;
+
+          @media screen and (max-width: $bp-small) {
+            width: 100%;
+            max-width: 343px;
+          }
         }
       }
     }
@@ -55,6 +69,10 @@
       height: 88px;
       background: $color-primary;
       align-self: center;
+
+      @media screen and (max-width: $bp-small) {
+        width: 343px;
+      }
     }
   }
 }

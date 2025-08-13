@@ -24,6 +24,18 @@
         padding: 96px 80px 48px;
         gap: 36px;
 
+        @media screen and (max-width: $bp-largest) {
+          padding: 64px 32px 48px;
+        }
+
+        @media screen and (max-width: $bp-small) {
+          padding: 64px 80px 48px;
+        }
+
+        @media screen and (max-width: $bp-mobilelarge) {
+          padding: 64px 16px 48px;
+        }
+
         .velvety__headline {
           display: flex;
           flex-direction: column;
@@ -32,11 +44,19 @@
           &-title {
             font-size: 28px;
             color: $content-color-light-4;
+
+            @media screen and (max-width: $bp-mobilelarge) {
+              font-size: 24px;
+            }
           }
 
           &-sub {
             font-size: 56px;
             color: $content-color-dark-2;
+
+            @media screen and (max-width: $bp-mobilelarge) {
+              font-size: 40px;
+            }
           }
         }
 
@@ -46,10 +66,31 @@
           gap: 64px;
           align-items: center;
 
+          @media screen and (max-width: $bp-largest) {
+            gap: 48px;
+          }
+
+          @media screen and (max-width: $bp-small) {
+            display: flex;
+            flex-direction: column;
+          }
+
+          &-ilustration {
+            width: clamp(343px, 39.72vw, 572px);
+          }
+
           .velety__main-container {
             display: flex;
             flex-direction: column;
             gap: 40px;
+
+            @media screen and (max-width: $bp-largest) {
+              gap: 16px;
+            }
+
+            @media screen and (max-width: $bp-mobilelarge) {
+              gap: 32px;
+            }
 
             .container__text {
               font-family: $font-secondary;
@@ -66,6 +107,10 @@
 
               &-main {
                 color: $color-primary-dark-1;
+
+                @media screen and (max-width: $bp-largest) {
+                  font-size: 32px;
+                }
               }
 
               &-sub {
@@ -84,6 +129,20 @@
         flex-direction: row;
         padding: 0 80px;
 
+        @media screen and (max-width: $bp-largest) {
+          padding: 0 32px;
+        }
+
+        @media screen and (max-width: $bp-small) {
+          display: flex;
+          flex-direction: column;
+          padding: 0 80px;
+        }
+
+        @media screen and (max-width: $bp-mobilelarge) {
+          padding: 0px 16px;
+        }
+
         border-width: 1px 0px 1px 0px;
         border-style: solid;
         border-color: $color-primary;
@@ -95,9 +154,9 @@
 
           padding: 48px 56px 48px 0;
 
-          border-width: 0px 1px 0px 0px;
-          border-style: solid;
-          border-color: $color-primary;
+          @media screen and (max-width: $bp-small) {
+            padding: 48px 0;
+          }
 
           &-icon {
             width: 48px;
@@ -108,6 +167,10 @@
             font-size: 40px;
             font-weight: 300;
             line-height: 120%;
+
+            @media screen and (max-width: $bp-mobilelarge) {
+              font-size: 32px;
+            }
           }
 
           &-subtitle {
@@ -124,6 +187,10 @@
           gap: 16px;
 
           padding: 48px 0 48px 56px;
+
+          @media screen and (max-width: $bp-small) {
+            padding: 48px 0;
+          }
 
           &-icon {
             width: 48px;
