@@ -3119,6 +3119,16 @@ h6 {
   flex-direction: column;
   gap: 12px;
 }
+@media screen and (max-width: 1100px) {
+  .team__content .team__container-row .team__card-name {
+    height: 104px;
+  }
+}
+@media screen and (max-width: 577px) {
+  .team__content .team__container-row .team__card-name {
+    height: fit-content;
+  }
+}
 .team__content .team__container-row .team__card-name .name {
   font-size: 30px;
   line-height: 120%;
@@ -3253,6 +3263,16 @@ h6 {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+@media screen and (max-width: 1100px) {
+  .team__content .team__container-row3 .team__card-name {
+    height: 104px;
+  }
+}
+@media screen and (max-width: 577px) {
+  .team__content .team__container-row3 .team__card-name {
+    height: fit-content;
+  }
 }
 .team__content .team__container-row3 .team__card-name .name {
   font-size: 30px;

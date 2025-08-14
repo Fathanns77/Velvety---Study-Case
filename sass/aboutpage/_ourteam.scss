@@ -90,6 +90,14 @@
             flex-direction: column;
             gap: 12px;
 
+            @media screen and (max-width: 1100px) {
+              height: 104px;
+            }
+
+            @media screen and (max-width: $bp-smallest) {
+              height: fit-content;
+            }
+
             .name {
               font-size: 30px;
               line-height: 120%;
@@ -235,6 +243,14 @@
             display: flex;
             flex-direction: column;
             gap: 12px;
+
+            @media screen and (max-width: 1100px) {
+              height: 104px;
+            }
+
+            @media screen and (max-width: $bp-smallest) {
+              height: fit-content;
+            }
 
             .name {
               font-size: 30px;
