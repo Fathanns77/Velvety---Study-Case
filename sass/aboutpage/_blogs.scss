@@ -8,6 +8,10 @@
   &__wrapper {
     padding: 96px 80px;
 
+    @media screen and (max-width: $bp-smallest) {
+      padding: 64px 32px;
+    }
+
     @media screen and (max-width: $bp-mobilelarge) {
       padding: 64px 16px;
     }
@@ -85,9 +89,15 @@
         width: 100%;
         max-width: 308px;
         gap: 24px;
+        transition: all 0.8s;
+        z-index: 1000;
 
         @media screen and (max-width: $bp-mobilelarge) {
           max-width: 280px;
+        }
+
+        &:hover {
+          box-shadow: 8px 0px 24px rgba(0, 0, 0, 0.1);
         }
 
         &-desc {

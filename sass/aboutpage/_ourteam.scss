@@ -12,6 +12,10 @@
     position: relative;
     padding: 96px 80px;
 
+    @media screen and (max-width: $bp-smallest) {
+      padding: 64px 32px;
+    }
+
     @media screen and (max-width: $bp-mobilelarge) {
       padding: 64px 16px;
     }
@@ -143,7 +147,7 @@
               will-change: transform;
             }
 
-            .icon:hover::after {
+            .icon.hovered::after {
               opacity: 0;
               transform: translate(-50%, -50%) scaleY(0);
             }
@@ -157,7 +161,153 @@
             max-height: 0;
             opacity: 0;
             overflow: hidden;
-            transition: max-height 0.4s ease, opacity 0.3s ease;
+            transition: max-height 1s ease, opacity 0.9s ease;
+
+            @media screen and (max-width: $bp-mobilelarge) {
+              gap: 16px;
+            }
+
+            .desc-title {
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 140%;
+              color: $content-color-dark-3;
+            }
+
+            .desc-social {
+              display: flex;
+              flex-direction: row;
+              gap: 18px;
+              height: 32px;
+
+              .social-icon {
+                width: 32px;
+              }
+            }
+          }
+
+          .team__card-desc.show {
+            margin-bottom: 0;
+            max-height: 500px;
+            opacity: 1;
+          }
+
+          .sparation {
+            flex: 0 0 1px;
+            height: 100%;
+            background-color: $color-primary;
+          }
+        }
+      }
+
+      &-row3 {
+        display: flex;
+        flex-direction: column;
+        gap: 52px;
+
+        @media screen and (max-width: $bp-small) {
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 32px;
+          display: contents;
+        }
+
+        @media screen and (max-width: 700px) {
+          flex-direction: column;
+          gap: 52px;
+        }
+
+        .team__card {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+
+          @media screen and (max-width: $bp-small) {
+            flex: 0 1 288px;
+            max-width: 288px;
+          }
+
+          @media screen and (max-width: 700px) {
+            max-width: none;
+          }
+
+          &-name {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            .name {
+              font-size: 30px;
+              line-height: 120%;
+              color: $content-color-dark-2;
+
+              @media screen and (max-width: $bp-mobilelarge) {
+                font-size: 24px;
+              }
+            }
+
+            .contain {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+            }
+
+            .position {
+              font-size: 20px;
+              line-height: 140%;
+              color: $content-color-light-3;
+            }
+
+            .icon {
+              position: relative;
+              width: 24px;
+              height: 24px;
+              bottom: 50%;
+              cursor: pointer;
+            }
+
+            .icon::before,
+            .icon::after {
+              content: "";
+              position: absolute;
+              background-color: $content-color-dark-2;
+              border-radius: 20px;
+              transition: all 0.2s;
+            }
+
+            .icon::before {
+              top: 50%;
+              left: 50%;
+              width: 19.2px;
+              height: 1.5px;
+              transform: translate(-50%, -50%);
+              will-change: transform;
+            }
+
+            .icon::after {
+              left: 50%;
+              top: 50%;
+              width: 1.5px;
+              height: 19.2px;
+              transform: translate(-50%, -50%);
+              will-change: transform;
+            }
+
+            .icon.hovered::after {
+              opacity: 0;
+              transform: translate(-50%, -50%) scaleY(0);
+            }
+          }
+
+          .team__card-desc {
+            margin-bottom: -20px;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: max-height 1s ease, opacity 0.9s ease;
 
             @media screen and (max-width: $bp-mobilelarge) {
               gap: 16px;

@@ -24,6 +24,10 @@
     padding: 56px 80px;
     gap: 64px;
 
+    @media screen and (max-width: $bp-smallest) {
+      padding: 56px 32px;
+    }
+
     @media screen and (max-width: $bp-mobilelarge) {
       padding: 56px 16px;
       gap: 32px;
