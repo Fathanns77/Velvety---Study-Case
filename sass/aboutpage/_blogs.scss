@@ -118,6 +118,10 @@
             line-height: 120%;
             font-weight: 300;
             color: $content-color-dark-2;
+
+            @media screen and (max-width: $bp-mobilelarge) {
+              font-size: 24px;
+            }
           }
 
           .desc-sub {

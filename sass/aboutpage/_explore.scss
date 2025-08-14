@@ -159,12 +159,21 @@
 
           border-top: 1px solid $color-primary;
 
+          @media screen and (max-width: $bp-mobilelarge) {
+            padding: 16px;
+            gap: 8px;
+          }
+
           &-name {
             font-weight: 300;
             font-size: 22px;
             line-height: 140%;
             text-transform: uppercase;
             color: $content-color-dark-2;
+
+            @media screen and (max-width: $bp-mobilelarge) {
+              font-size: 18px;
+            }
           }
 
           &-price {
@@ -177,12 +186,20 @@
               font-weight: 300;
               text-decoration: line-through;
               color: $content-color-light-3;
+
+              @media screen and (max-width: $bp-mobilelarge) {
+                font-size: 18px;
+              }
             }
 
             .price__fixed {
               font-size: 22px;
               font-weight: 700;
               color: $content-color-dark-2;
+
+              @media screen and (max-width: $bp-mobilelarge) {
+                font-size: 18px;
+              }
             }
           }
 
@@ -197,9 +214,18 @@
               flex-direction: row;
               gap: 4px;
 
+              @media screen and (max-width: $bp-mobilelarge) {
+                gap: 2px;
+              }
+
               .star {
                 width: 20px;
                 height: 20px;
+
+                @media screen and (max-width: $bp-mobilelarge) {
+                  width: 16px;
+                  height: 16px;
+                }
               }
             }
 
@@ -208,6 +234,10 @@
               letter-spacing: 140%;
 
               color: $content-color-dark-1;
+
+              @media screen and (max-width: $bp-mobilelarge) {
+                font-size: 16px;
+              }
             }
           }
         }
