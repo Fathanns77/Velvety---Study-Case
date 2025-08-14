@@ -2709,6 +2709,17 @@ h6 {
   font-weight: 300;
   line-height: 140%;
 }
+.aboutus__wrapper-content .missionandvision .sparation_misivisi {
+  flex: 0 0 1px;
+  height: 308px;
+  background: #c8d8c0;
+  align-self: center;
+}
+@media screen and (max-width: 768px) {
+  .aboutus__wrapper-content .missionandvision .sparation_misivisi {
+    width: 343px;
+  }
+}
 .aboutus__wrapper-content .missionandvision .vision {
   display: flex;
   flex-direction: column;
