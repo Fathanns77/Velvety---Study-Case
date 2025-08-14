@@ -3192,7 +3192,7 @@ h6 {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
-  transition: max-height 1s ease, opacity 0.9s ease;
+  transition: max-height 1.5s ease, opacity 0.9s ease;
 }
 @media screen and (max-width: 425px) {
   .team__content .team__container-row .team__card .team__card-desc {
@@ -3337,7 +3337,7 @@ h6 {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
-  transition: max-height 1s ease, opacity 0.9s ease;
+  transition: max-height 1.5s ease, opacity 0.9s ease;
 }
 @media screen and (max-width: 425px) {
   .team__content .team__container-row3 .team__card .team__card-desc {
