@@ -425,7 +425,7 @@ h6 {
   align-items: center;
   justify-content: space-between;
   margin-top: -84px;
-  height: 733px;
+  height: 734px;
   position: relative;
   flex-wrap: wrap;
 }
@@ -2774,7 +2774,6 @@ h6 {
   flex-direction: column;
   justify-content: center;
   position: relative;
-  gap: 56px;
 }
 @media screen and (max-width: 425px) {
   .explore__content {
@@ -2785,6 +2784,7 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 56px;
   gap: 16px;
 }
 .explore__content-headline .headline__main {
@@ -2853,6 +2853,7 @@ h6 {
   flex-direction: row;
   gap: 32px;
   overflow: auto;
+  padding-bottom: 56px;
 }
 @media screen and (max-width: 425px) {
   .explore__content-slider .slider__listing {
@@ -2902,6 +2903,16 @@ h6 {
   .explore__content-slider .slider__listing .product__desc {
     padding: 16px;
     gap: 8px;
+  }
+}
+.explore__content-slider .slider__listing .product__desc .product__info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media screen and (max-width: 425px) {
+  .explore__content-slider .slider__listing .product__desc .product__info {
+    gap: 4px;
   }
 }
 .explore__content-slider .slider__listing .product__desc-name {
@@ -3277,13 +3288,13 @@ h6 {
   height: 100%;
   background-color: #c8d8c0;
 }
-.team__content .team__container-row3 {
+.team__content .team__container .row-last {
   display: flex;
   flex-direction: column;
   gap: 52px;
 }
-@media screen and (max-width: 768px) {
-  .team__content .team__container-row3 {
+@media screen and (max-width: 992px) {
+  .team__content .team__container .row-last {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 32px;
@@ -3291,78 +3302,78 @@ h6 {
   }
 }
 @media screen and (max-width: 700px) {
-  .team__content .team__container-row3 {
+  .team__content .team__container .row-last {
     flex-direction: column;
     gap: 52px;
   }
 }
-.team__content .team__container-row3 .team__card {
+.team__content .team__container .row-last .team__card {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 @media screen and (max-width: 768px) {
-  .team__content .team__container-row3 .team__card {
+  .team__content .team__container .row-last .team__card {
     flex: 0 1 288px;
     max-width: 288px;
   }
 }
 @media screen and (max-width: 700px) {
-  .team__content .team__container-row3 .team__card {
+  .team__content .team__container .row-last .team__card {
     max-width: none;
   }
 }
-.team__content .team__container-row3 .team__card-name {
+.team__content .team__container .row-last .team__card-name {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 @media screen and (max-width: 1100px) {
-  .team__content .team__container-row3 .team__card-name {
+  .team__content .team__container .row-last .team__card-name {
     height: 104px;
   }
 }
 @media screen and (max-width: 577px) {
-  .team__content .team__container-row3 .team__card-name {
+  .team__content .team__container .row-last .team__card-name {
     height: fit-content;
   }
 }
-.team__content .team__container-row3 .team__card-name .name {
+.team__content .team__container .row-last .team__card-name .name {
   font-size: 30px;
   line-height: 120%;
   color: #213721;
 }
 @media screen and (max-width: 425px) {
-  .team__content .team__container-row3 .team__card-name .name {
+  .team__content .team__container .row-last .team__card-name .name {
     font-size: 24px;
   }
 }
-.team__content .team__container-row3 .team__card-name .contain {
+.team__content .team__container .row-last .team__card-name .contain {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.team__content .team__container-row3 .team__card-name .position {
+.team__content .team__container .row-last .team__card-name .position {
   font-size: 20px;
   line-height: 140%;
   color: #899f87;
 }
-.team__content .team__container-row3 .team__card-name .icon {
+.team__content .team__container .row-last .team__card-name .icon {
   position: relative;
   width: 24px;
   height: 24px;
   bottom: 50%;
   cursor: pointer;
 }
-.team__content .team__container-row3 .team__card-name .icon::before,
-.team__content .team__container-row3 .team__card-name .icon::after {
+.team__content .team__container .row-last .team__card-name .icon::before,
+.team__content .team__container .row-last .team__card-name .icon::after {
   content: "";
   position: absolute;
   background-color: #213721;
   border-radius: 20px;
   transition: all 0.2s;
 }
-.team__content .team__container-row3 .team__card-name .icon::before {
+.team__content .team__container .row-last .team__card-name .icon::before {
   top: 50%;
   left: 50%;
   width: 19.2px;
@@ -3370,7 +3381,7 @@ h6 {
   transform: translate(-50%, -50%);
   will-change: transform;
 }
-.team__content .team__container-row3 .team__card-name .icon::after {
+.team__content .team__container .row-last .team__card-name .icon::after {
   left: 50%;
   top: 50%;
   width: 1.5px;
@@ -3378,11 +3389,11 @@ h6 {
   transform: translate(-50%, -50%);
   will-change: transform;
 }
-.team__content .team__container-row3 .team__card-name .icon.hovered::after {
+.team__content .team__container .row-last .team__card-name .icon.hovered::after {
   opacity: 0;
   transform: translate(-50%, -50%) scaleY(0);
 }
-.team__content .team__container-row3 .team__card .team__card-desc {
+.team__content .team__container .row-last .team__card .team__card-desc {
   margin-bottom: -20px;
   display: flex;
   flex-direction: column;
@@ -3393,31 +3404,31 @@ h6 {
   transition: max-height 1.5s ease, opacity 0.9s ease;
 }
 @media screen and (max-width: 425px) {
-  .team__content .team__container-row3 .team__card .team__card-desc {
+  .team__content .team__container .row-last .team__card .team__card-desc {
     gap: 16px;
   }
 }
-.team__content .team__container-row3 .team__card .team__card-desc .desc-title {
+.team__content .team__container .row-last .team__card .team__card-desc .desc-title {
   font-size: 16px;
   font-weight: 400;
   line-height: 140%;
   color: #617C5F;
 }
-.team__content .team__container-row3 .team__card .team__card-desc .desc-social {
+.team__content .team__container .row-last .team__card .team__card-desc .desc-social {
   display: flex;
   flex-direction: row;
   gap: 18px;
   height: 32px;
 }
-.team__content .team__container-row3 .team__card .team__card-desc .desc-social .social-icon {
+.team__content .team__container .row-last .team__card .team__card-desc .desc-social .social-icon {
   width: 32px;
 }
-.team__content .team__container-row3 .team__card .team__card-desc.show {
+.team__content .team__container .row-last .team__card .team__card-desc.show {
   margin-bottom: 0;
   max-height: 500px;
   opacity: 1;
 }
-.team__content .team__container-row3 .team__card .sparation {
+.team__content .team__container .row-last .team__card .sparation {
   flex: 0 0 1px;
   height: 100%;
   background-color: #c8d8c0;
@@ -3547,12 +3558,12 @@ h6 {
 .blogs__content {
   display: flex;
   flex-direction: column;
-  gap: 48px;
 }
 .blogs__content .blogs__content-headline {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-bottom: 48px;
 }
 .blogs__content .blogs__content-headline .headline__title {
   display: flex;
@@ -3598,6 +3609,7 @@ h6 {
   gap: 32px;
   width: 104%;
   max-width: 1328px;
+  padding-bottom: 48px;
   overflow: auto;
 }
 .blogs__content .blogs__content-row::-webkit-scrollbar {
@@ -3613,9 +3625,9 @@ h6 {
   flex-direction: column;
   width: 100%;
   max-width: 308px;
+  height: fit-content;
   gap: 24px;
   transition: all 0.8s;
-  z-index: 1000;
 }
 @media screen and (max-width: 425px) {
   .blogs__content .blogs__content-row .row__card {
@@ -3623,7 +3635,7 @@ h6 {
   }
 }
 .blogs__content .blogs__content-row .row__card:hover {
-  box-shadow: 8px 0px 24px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.12);
 }
 .blogs__content .blogs__content-row .row__card-desc {
   display: flex;

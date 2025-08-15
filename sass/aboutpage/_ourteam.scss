@@ -208,12 +208,12 @@
         }
       }
 
-      &-row3 {
+      .row-last {
         display: flex;
         flex-direction: column;
         gap: 52px;
 
-        @media screen and (max-width: $bp-small) {
+        @media screen and (max-width: $bp-medium) {
           flex-direction: row;
           flex-wrap: wrap;
           gap: 32px;

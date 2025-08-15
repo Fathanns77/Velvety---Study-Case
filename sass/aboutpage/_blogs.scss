@@ -20,12 +20,13 @@
   &__content {
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    // gap: 48px;
 
     .blogs__content-headline {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      padding-bottom: 48px;
 
       .headline__title {
         display: flex;
@@ -74,6 +75,7 @@
       gap: 32px;
       width: 104%;
       max-width: 1328px;
+      padding-bottom: 48px;
       overflow: auto;
       &::-webkit-scrollbar {
         display: none;
@@ -88,16 +90,16 @@
         flex-direction: column;
         width: 100%;
         max-width: 308px;
+        height: fit-content;
         gap: 24px;
         transition: all 0.8s;
-        z-index: 1000;
 
         @media screen and (max-width: $bp-mobilelarge) {
           max-width: 280px;
         }
 
         &:hover {
-          box-shadow: 8px 0px 24px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.12);
         }
 
         &-desc {
