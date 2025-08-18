@@ -87,7 +87,7 @@
         }
 
         @media only screen and (max-width: $bp-smallest) {
-          width: 75px;
+          width: 74px;
         }
       }
 
@@ -95,6 +95,10 @@
         display: flex;
         flex-direction: column;
         gap: 8px;
+
+        @media only screen and (max-width: $bp-smallest) {
+          height: 118px;
+        }
 
         .feature__title {
           color: $content-color-dark-2;
@@ -239,14 +243,15 @@
     &__right {
       display: flex;
       flex-direction: column;
-      gap: 24px;
-      padding: 32px 16px;
+      gap: 32px;
+      padding: 56px 16px;
 
       .ingredients__feature {
         flex-direction: column;
         align-items: start;
         margin: 0 auto;
 
+        gap: 20px;
         width: 100%;
         max-width: 450px;
       }
@@ -256,6 +261,7 @@
   @media only screen and (max-width: $bp-smallest) {
     .ingredients__headline {
       font-size: 40px;
+      padding: 64px 16px 48px 16px;
     }
 
     .ingredients__image {

@@ -760,7 +760,7 @@
 
     .product__image {
       width: 343px;
-      height: fit-content;
+      height: 320px;
     }
 
     .product__desc {
@@ -768,9 +768,13 @@
       gap: 10px;
 
       width: 305px;
-      height: 161px;
+      height: 154px;
 
       border-top: 1px solid $color-primary;
+
+      .product__name {
+        font-size: 20px;
+      }
     }
 
     .product__title {
@@ -796,6 +800,7 @@
 
     .shop-cta {
       align-self: flex-start;
+      height: 50px;
     }
   }
 }

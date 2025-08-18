@@ -6,13 +6,22 @@
   width: 100%;
   z-index: 1000;
 
+  height: 84px;
+
   @media screen and (max-width: $bp-small) {
     padding: 16px;
+
+    height: 68px;
   }
 
   &__logo {
     height: 44px;
     width: 137px;
+
+    @media screen and (max-width: $bp-small) {
+      width: 112.09px;
+      height: 36px;
+    }
   }
 
   .nav__menu {
@@ -28,9 +37,14 @@
 
     @media screen and (max-width: $bp-small) {
       justify-content: flex-end;
-      gap: 20px;
+      gap: 16px;
       width: auto;
       align-items: center;
+      width: 171px;
+    }
+
+    @media screen and (max-width: $bp-smallest) {
+      width: 171px;
     }
   }
 }

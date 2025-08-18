@@ -8,6 +8,7 @@
 
     @media only screen and (max-width: $bp-smallest) {
       padding: 64px 16px;
+      overflow: hidden;
     }
   }
 
@@ -33,6 +34,7 @@
 
     @media only screen and (max-width: $bp-smallest) {
       gap: 48px;
+      padding-top: 0;
     }
   }
 
@@ -67,10 +69,6 @@
       flex-direction: column;
       align-items: flex-start;
       gap: 32px;
-
-      @media only screen and (max-width: $bp-largest) {
-        gap: 22px;
-      }
     }
   }
 
@@ -82,6 +80,17 @@
     @media only screen and (max-width: $bp-largest) {
       font-size: 32px;
       font-weight: 400;
+      line-height: 120%;
+      padding-right: 0;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 120%;
+      padding-right: 5px;
+      height: 342px;
+      width: 343px;
     }
   }
 
@@ -103,6 +112,11 @@
         width: 28px;
         height: 28px;
       }
+
+      @media only screen and (max-width: $bp-smallest) {
+        width: 38px;
+        height: 38px;
+      }
     }
   }
 
@@ -122,7 +136,8 @@
     }
 
     @media only screen and (max-width: $bp-smallest) {
-      max-width: 343px;
+      max-width: max-content;
+      height: 538px;
     }
   }
 
@@ -138,6 +153,13 @@
       height: auto;
       padding-top: 2px;
       padding-bottom: 24px;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      flex-direction: row;
+      height: auto;
+      padding-top: 0px;
+      padding-bottom: 0px;
     }
 
     .arrow {

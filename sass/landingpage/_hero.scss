@@ -119,6 +119,9 @@
         font-size: 48px;
         width: 100%;
         max-width: max-content;
+
+        padding-bottom: 16px;
+        padding-top: 28px;
       }
     }
 
@@ -174,6 +177,9 @@
       top: unset;
       left: unset;
       order: 2;
+
+      height: fit-content;
+      padding-bottom: 32px;
     }
 
     .arrow {
@@ -229,7 +235,13 @@
       justify-content: center;
       height: auto;
       gap: 16px;
-      margin-top: 30px;
+      margin-top: 0px;
+    }
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    &__content {
+      height: 744px;
     }
   }
 }

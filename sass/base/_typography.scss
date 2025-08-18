@@ -66,6 +66,12 @@ h6 {
 
   @media only screen and (max-width: $bp-smallest) {
     font-size: 16px;
+    gap: 16px;
+  }
+
+  .btn__icon {
+    width: 30.11px;
+    height: 18.47px;
   }
 }
 
@@ -98,6 +104,7 @@ h6 {
 
   @media only screen and (max-width: $bp-smallest) {
     padding: 12px 16px;
+    height: 46px;
   }
 }
 
@@ -132,5 +139,6 @@ h6 {
 
   @media only screen and (max-width: $bp-smallest) {
     padding: 12px 16px;
+    height: 46px;
   }
 }

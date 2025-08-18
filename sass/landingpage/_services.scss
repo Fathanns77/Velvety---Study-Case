@@ -2,14 +2,6 @@
   background-color: $content-color-light-1;
   border-top: 1px solid $color-primary;
   border-bottom: 1px solid $color-primary;
-  padding: 96px 0;
-
-  @media only screen and (max-width: $bp-medium) {
-    padding: 96px 0;
-  }
-  @media only screen and (max-width: $bp-smallest) {
-    padding: 0;
-  }
 
   .container {
     max-width: map-get($container-max-widths, xxl);
@@ -31,7 +23,7 @@
     }
 
     @media only screen and (max-width: $bp-smallest) {
-      padding: 64px 16px;
+      padding: 64px 0px;
       gap: 48px;
     }
   }
@@ -44,8 +36,12 @@
 
     img {
       width: 100%;
-      height: auto;
+      height: 434.7px;
       display: block;
+
+      @media only screen and (max-width: $bp-smallest) {
+        height: 428.45px;
+      }
     }
   }
 
@@ -57,6 +53,11 @@
     gap: 32px;
     max-width: 600px;
     order: 1;
+    padding: 96px 0;
+
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 0;
+    }
 
     &--headline {
       display: flex;
@@ -68,6 +69,7 @@
       font-size: 28px;
       font-weight: 300;
       color: $content-color-light-3;
+      line-height: 110%;
 
       @media only screen and (max-width: $bp-smallest) {
         font-size: 24px;
@@ -78,15 +80,18 @@
       font-size: 56px;
       font-weight: 300;
       color: $content-color-dark-2;
+      line-height: 120%;
 
       @media only screen and (max-width: $bp-smallest) {
-        font-size: 38px;
+        font-size: 40px;
+        letter-spacing: 1;
       }
     }
 
     &--subtitle {
       font-size: 20px;
       font-weight: 300;
+      line-height: 140%;
       color: $content-color-dark-1;
     }
 

@@ -43,12 +43,15 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: 131px;
+        max-height: 131px;
 
         gap: 16px;
 
         .desc__main {
           font-size: 28px;
           font-weight: 300;
+          line-height: 110.00000000000001%;
           color: $content-color-light-1;
 
           @media screen and (max-width: $bp-mobilelarge) {

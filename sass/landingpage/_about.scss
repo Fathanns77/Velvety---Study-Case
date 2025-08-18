@@ -15,26 +15,33 @@
     gap: 96px;
 
     @media only screen and (max-width: $bp-smallest) {
-      padding: 96px 16px;
-      gap: 32px;
+      padding: 64px 16px;
+      gap: 64px;
     }
   }
 
   .aboutus {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     padding: 0px;
     gap: 26px;
 
     @media only screen and (max-width: $bp-medium) {
       flex-wrap: wrap;
     }
+    @media only screen and (max-width: $bp-smallest) {
+      gap: 32px;
+    }
 
     .headline {
       display: flex;
       flex-direction: column;
       gap: 16px;
+
+      @media only screen and (max-width: $bp-smallest) {
+        gap: 26px;
+      }
 
       &__title {
         font-size: 28px;
@@ -53,7 +60,7 @@
 
         width: 100%;
         max-width: 566px;
-        
+
         @media only screen and (max-width: $bp-smallest) {
           font-size: 40px;
         }
@@ -97,31 +104,34 @@
     }
 
     &__company {
-  display: flex;
-  flex-shrink: 1;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+      display: flex;
+      flex-shrink: 1;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
 
-  width: 100%;
+      width: 100%;
+      max-height: max-content;
 
-  @media only screen and (max-width: 1200px) {
-    gap: 20px;
-  }
+      @media only screen and (max-width: 1200px) {
+        gap: 20px;
+      }
+      @media only screen and (max-width: 400px) {
+        gap: 26px;
+      }
 
-  .company--image {
-    transition: transform 0.3s ease;
+      .company--image {
+        transition: transform 0.3s ease;
 
-    &:hover {
-      transform: translateY(-5px);
+        &:hover {
+          transform: translateY(-5px);
+        }
+
+        @media only screen and (max-width: 1200px) {
+          width: 150px;
+        }
+      }
     }
-
-    @media only screen and (max-width: 1200px) {
-      width: 150px;
-    }
-  }
-}
-
   }
 }

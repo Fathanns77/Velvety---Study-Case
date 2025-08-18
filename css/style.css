@@ -97,7 +97,12 @@ h6 {
 @media only screen and (max-width: 577px) {
   .btn {
     font-size: 16px;
+    gap: 16px;
   }
+}
+.btn .btn__icon {
+  width: 30.11px;
+  height: 18.47px;
 }
 
 .btns {
@@ -124,6 +129,7 @@ h6 {
 @media only screen and (max-width: 577px) {
   .btns {
     padding: 12px 16px;
+    height: 46px;
   }
 }
 
@@ -153,6 +159,7 @@ h6 {
 @media only screen and (max-width: 577px) {
   .active-btns {
     padding: 12px 16px;
+    height: 46px;
   }
 }
 
@@ -163,15 +170,23 @@ h6 {
   padding: 20px 80px;
   width: 100%;
   z-index: 1000;
+  height: 84px;
 }
 @media screen and (max-width: 768px) {
   .nav {
     padding: 16px;
+    height: 68px;
   }
 }
 .nav__logo {
   height: 44px;
   width: 137px;
+}
+@media screen and (max-width: 768px) {
+  .nav__logo {
+    width: 112.09px;
+    height: 36px;
+  }
 }
 .nav .nav__menu {
   display: flex;
@@ -188,9 +203,15 @@ h6 {
 @media screen and (max-width: 768px) {
   .nav .nav__menu {
     justify-content: flex-end;
-    gap: 20px;
+    gap: 16px;
     width: auto;
     align-items: center;
+    width: 171px;
+  }
+}
+@media screen and (max-width: 577px) {
+  .nav .nav__menu {
+    width: 171px;
   }
 }
 
@@ -516,6 +537,8 @@ h6 {
     font-size: 48px;
     width: 100%;
     max-width: max-content;
+    padding-bottom: 16px;
+    padding-top: 28px;
   }
 }
 .hero__content .hero__button {
@@ -574,6 +597,8 @@ h6 {
     top: unset;
     left: unset;
     order: 2;
+    height: fit-content;
+    padding-bottom: 32px;
   }
 }
 .hero .slider .arrow {
@@ -629,7 +654,12 @@ h6 {
     justify-content: center;
     height: auto;
     gap: 16px;
-    margin-top: 30px;
+    margin-top: 0px;
+  }
+}
+@media only screen and (max-width: 577px) {
+  .hero__content {
+    height: 744px;
   }
 }
 
@@ -638,6 +668,14 @@ h6 {
   flex-direction: column;
   align-items: flex-start;
   background-color: #f2f6ef;
+  border-top: 1px solid #c8d8c0;
+}
+@media only screen and (max-width: 577px) {
+  .featured {
+    padding: 64px 0;
+    height: 100%;
+    max-height: 1814px;
+  }
 }
 .featured__header {
   display: flex;
@@ -647,7 +685,13 @@ h6 {
   margin: 0 auto;
   gap: 16px;
   width: 100%;
-  border-top: 1px solid #c8d8c0;
+  height: 100%;
+  max-height: 333px;
+}
+@media only screen and (max-width: 577px) {
+  .featured__header {
+    padding: 0 16px;
+  }
 }
 .featured__subtitle {
   color: #899f87;
@@ -669,7 +713,10 @@ h6 {
 }
 @media only screen and (max-width: 577px) {
   .featured__title {
-    font-size: 32px;
+    font-size: 40px;
+    line-height: 120%;
+    padding: 0;
+    padding-bottom: 48px;
   }
 }
 .featured__products {
@@ -683,6 +730,8 @@ h6 {
   border-style: solid;
   border-color: #c8d8c0;
   z-index: 1;
+  height: 100%;
+  max-height: max-content;
 }
 .featured__products .product-card {
   display: flex;
@@ -691,6 +740,8 @@ h6 {
   padding: 32px;
   gap: 24px;
   width: 480px;
+  height: 100%;
+  max-height: 688px;
   transition: transform 0.3s ease;
 }
 .featured__products .product-card:hover {
@@ -747,7 +798,7 @@ h6 {
 .featured__products .rating .product-rating__rating {
   font-family: "Aileron", sans-serif;
   font-weight: 300;
-  size: 22px;
+  font-size: 22px;
   line-height: 140%;
   color: #3c5e39;
 }
@@ -912,6 +963,7 @@ h6 {
   .featured__products .product-card-2 {
     width: 100%;
     max-width: 375px;
+    height: 484px;
     padding: 20px;
   }
   .featured__products .product-card__desc {
@@ -963,6 +1015,11 @@ h6 {
   }
   .featured__products .product-card__image img {
     width: 335px;
+    height: 314px;
+    background-color: #e4ece0;
+  }
+  .featured__products .product-card__image .img-2 {
+    background-color: rgba(255, 0, 0, 0);
   }
   .featured__products .product-card-2 {
     border-width: 1px 0px;
@@ -1589,14 +1646,17 @@ h6 {
   }
   .all-products .product__image {
     width: 343px;
-    height: fit-content;
+    height: 320px;
   }
   .all-products .product__desc {
     padding: 24px;
     gap: 10px;
     width: 305px;
-    height: 161px;
+    height: 154px;
     border-top: 1px solid #c8d8c0;
+  }
+  .all-products .product__desc .product__name {
+    font-size: 20px;
   }
   .all-products .product__title {
     font-size: 20px;
@@ -1617,6 +1677,7 @@ h6 {
   }
   .all-products .shop-cta {
     align-self: flex-start;
+    height: 50px;
   }
 }
 .aboutus-company {
@@ -1636,14 +1697,14 @@ h6 {
 }
 @media only screen and (max-width: 577px) {
   .aboutus-company .aboutus-wrapper {
-    padding: 96px 16px;
-    gap: 32px;
+    padding: 64px 16px;
+    gap: 64px;
   }
 }
 .aboutus-company .aboutus {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   padding: 0px;
   gap: 26px;
 }
@@ -1652,10 +1713,20 @@ h6 {
     flex-wrap: wrap;
   }
 }
+@media only screen and (max-width: 577px) {
+  .aboutus-company .aboutus {
+    gap: 32px;
+  }
+}
 .aboutus-company .aboutus .headline {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+@media only screen and (max-width: 577px) {
+  .aboutus-company .aboutus .headline {
+    gap: 26px;
+  }
 }
 .aboutus-company .aboutus .headline__title {
   font-size: 28px;
@@ -1717,10 +1788,16 @@ h6 {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  max-height: max-content;
 }
 @media only screen and (max-width: 1200px) {
   .aboutus-company .asseenis__company {
     gap: 20px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .aboutus-company .asseenis__company {
+    gap: 26px;
   }
 }
 .aboutus-company .asseenis__company .company--image {
@@ -1739,17 +1816,6 @@ h6 {
   background-color: #f2f6ef;
   border-top: 1px solid #c8d8c0;
   border-bottom: 1px solid #c8d8c0;
-  padding: 96px 0;
-}
-@media only screen and (max-width: 992px) {
-  .try-service {
-    padding: 96px 0;
-  }
-}
-@media only screen and (max-width: 577px) {
-  .try-service {
-    padding: 0;
-  }
 }
 .try-service .container {
   max-width: 1440px;
@@ -1772,7 +1838,7 @@ h6 {
 }
 @media only screen and (max-width: 577px) {
   .try-service__wrapper {
-    padding: 64px 16px;
+    padding: 64px 0px;
     gap: 48px;
   }
 }
@@ -1784,8 +1850,13 @@ h6 {
 }
 .try-service__image img {
   width: 100%;
-  height: auto;
+  height: 434.7px;
   display: block;
+}
+@media only screen and (max-width: 577px) {
+  .try-service__image img {
+    height: 428.45px;
+  }
 }
 .try-service__content {
   display: flex;
@@ -1795,6 +1866,12 @@ h6 {
   gap: 32px;
   max-width: 600px;
   order: 1;
+  padding: 96px 0;
+}
+@media only screen and (max-width: 577px) {
+  .try-service__content {
+    padding: 0;
+  }
 }
 .try-service__content--headline {
   display: flex;
@@ -1805,6 +1882,7 @@ h6 {
   font-size: 28px;
   font-weight: 300;
   color: #899f87;
+  line-height: 110%;
 }
 @media only screen and (max-width: 577px) {
   .try-service__content--pretitle {
@@ -1815,15 +1893,18 @@ h6 {
   font-size: 56px;
   font-weight: 300;
   color: #213721;
+  line-height: 120%;
 }
 @media only screen and (max-width: 577px) {
   .try-service__content--title {
-    font-size: 38px;
+    font-size: 40px;
+    letter-spacing: 1;
   }
 }
 .try-service__content--subtitle {
   font-size: 20px;
   font-weight: 300;
+  line-height: 140%;
   color: #3c5e39;
 }
 @media only screen and (max-width: 577px) {
@@ -1958,6 +2039,7 @@ h6 {
   align-items: center;
   gap: 14px;
   font-size: 22px;
+  line-height: 140%;
   text-align: center;
   text-decoration: none;
   list-style: none;
@@ -1999,6 +2081,11 @@ h6 {
     padding: 32px 40px;
   }
 }
+@media screen and (max-width: 577px) {
+  .footer__brand {
+    padding: 64px 16px 32px 16px;
+  }
+}
 .footer__brand--item {
   display: flex;
   flex-direction: column;
@@ -2013,6 +2100,7 @@ h6 {
 .footer__brand .opening-headline__subtitle {
   font-size: 20px;
   color: hsl(115, 11%, 80%);
+  line-height: 140%;
 }
 @media screen and (max-width: 1024px) {
   .footer__brand .opening-headline__subtitle {
@@ -2027,6 +2115,7 @@ h6 {
 .footer__brand .opening-headline__hours {
   font-size: 22px;
   color: #3c5e39;
+  line-height: 140%;
 }
 @media screen and (max-width: 1024px) {
   .footer__brand .opening-headline__hours {
@@ -2135,6 +2224,7 @@ h6 {
 .footer__designed {
   font-size: 18px;
   text-align: center;
+  line-height: 140%;
 }
 .footer__links {
   display: flex;
@@ -2142,6 +2232,7 @@ h6 {
   align-items: flex-start;
   gap: 40px;
   font-size: 18px;
+  line-height: 140%;
   color: #213721;
   list-style: none;
   width: 261px;
@@ -2242,13 +2333,18 @@ h6 {
 }
 @media only screen and (max-width: 577px) {
   .ingredients__right .ingredients__feature .feature__icon {
-    width: 75px;
+    width: 74px;
   }
 }
 .ingredients__right .ingredients__feature .feature__text {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+@media only screen and (max-width: 577px) {
+  .ingredients__right .ingredients__feature .feature__text {
+    height: 118px;
+  }
 }
 .ingredients__right .ingredients__feature .feature__text .feature__title {
   color: #213721;
@@ -2377,13 +2473,14 @@ h6 {
   .ingredients__right {
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    padding: 32px 16px;
+    gap: 32px;
+    padding: 56px 16px;
   }
   .ingredients__right .ingredients__feature {
     flex-direction: column;
     align-items: start;
     margin: 0 auto;
+    gap: 20px;
     width: 100%;
     max-width: 450px;
   }
@@ -2391,6 +2488,7 @@ h6 {
 @media only screen and (max-width: 577px) {
   .ingredients .ingredients__headline {
     font-size: 40px;
+    padding: 64px 16px 48px 16px;
   }
   .ingredients .ingredients__image {
     width: 100%;
@@ -2445,6 +2543,7 @@ h6 {
   font-size: clamp(48px, 8vw, 108px);
   text-align: center;
   font-weight: 300;
+  line-height: 110%;
   font-family: "IvyMode", sans-serif;
   color: #f2f6ef;
 }
@@ -2464,6 +2563,7 @@ h6 {
   font-size: 20px;
   text-align: center;
   font-weight: 300;
+  line-height: 140%;
   font-family: "IvyMode", sans-serif;
   color: #f2f6ef;
 }
@@ -2572,6 +2672,7 @@ h6 {
 .aboutus__wrapper-content .content__velvety .velvety__headline-title {
   font-size: 28px;
   color: #738c71;
+  line-height: 110%;
 }
 @media screen and (max-width: 425px) {
   .aboutus__wrapper-content .content__velvety .velvety__headline-title {
@@ -2581,6 +2682,7 @@ h6 {
 .aboutus__wrapper-content .content__velvety .velvety__headline-sub {
   font-size: 56px;
   color: #213721;
+  line-height: 120%;
 }
 @media screen and (max-width: 425px) {
   .aboutus__wrapper-content .content__velvety .velvety__headline-sub {
@@ -2646,15 +2748,14 @@ h6 {
   font-family: "Aileron", sans-serif;
   font-size: 20px;
   font-style: italic;
+  line-height: 140%;
   color: #899f87;
 }
 .aboutus__wrapper-content .missionandvision {
   display: flex;
   flex-direction: row;
   padding: 0 80px;
-  border-width: 1px 0px 1px 0px;
-  border-style: solid;
-  border-color: #c8d8c0;
+  box-shadow: inset 0 1px 0 0 #c8d8c0, inset 0 -1px 0 0 #c8d8c0; /* bottom */
 }
 @media screen and (max-width: 1200px) {
   .aboutus__wrapper-content .missionandvision {
@@ -2828,7 +2929,7 @@ h6 {
 .explore__content-slider .slider__title-head {
   font-size: 40px;
   font-weight: 300;
-  letter-spacing: 120%;
+  line-height: 120%;
   font-family: "IvyMode", sans-serif;
   color: #213721;
 }
@@ -2937,6 +3038,7 @@ h6 {
   font-weight: 300;
   text-decoration: line-through;
   color: #899f87;
+  line-height: 140%;
 }
 @media screen and (max-width: 425px) {
   .explore__content-slider .slider__listing .product__desc-price .price__discount {
@@ -2947,6 +3049,7 @@ h6 {
   font-size: 22px;
   font-weight: 700;
   color: #213721;
+  line-height: 140%;
 }
 @media screen and (max-width: 425px) {
   .explore__content-slider .slider__listing .product__desc-price .price__fixed {
@@ -2981,7 +3084,7 @@ h6 {
 }
 .explore__content-slider .slider__listing .product__desc-rating .rating__number {
   font-size: 22px;
-  letter-spacing: 140%;
+  line-height: 140%;
   color: #3c5e39;
 }
 @media screen and (max-width: 425px) {
@@ -3054,11 +3157,14 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 131px;
+  max-height: 131px;
   gap: 16px;
 }
 .value__content .value__item-desc .desc__main {
   font-size: 28px;
   font-weight: 300;
+  line-height: 110%;
   color: #f2f6ef;
 }
 @media screen and (max-width: 425px) {
@@ -3739,6 +3845,7 @@ h6 {
 .cta__title {
   font-size: 40px;
   font-weight: 300;
+  line-height: 120%;
   color: #f2f6ef;
   font-family: "IvyMode", sans-serif;
 }
@@ -3838,6 +3945,8 @@ h6 {
 @media only screen and (max-width: 577px) {
   .shop-cta {
     border: none;
+    padding: 0;
+    height: fit-content;
   }
 }
 
@@ -3872,6 +3981,20 @@ h6 {
   }
   .cta02__item {
     flex: 1 1 280px;
+    max-width: 320px;
+    min-width: 200px;
+    height: auto;
+  }
+}
+@media (max-width: 577px) {
+  .cta02-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 48px;
+    padding: 64px 24px;
+  }
+  .cta02__item {
+    flex: 1 1 211px;
     max-width: 320px;
     min-width: 200px;
     height: auto;
@@ -4001,6 +4124,7 @@ h6 {
 @media only screen and (max-width: 577px) {
   .testimonials .container {
     padding: 64px 16px;
+    overflow: hidden;
   }
 }
 .testimonials__wrapper {
@@ -4027,6 +4151,7 @@ h6 {
 @media only screen and (max-width: 577px) {
   .testimonials__wrapper {
     gap: 48px;
+    padding-top: 0;
   }
 }
 .testimonials__content {
@@ -4062,11 +4187,6 @@ h6 {
   align-items: flex-start;
   gap: 32px;
 }
-@media only screen and (max-width: 1200px) {
-  .testimonials__content--text {
-    gap: 22px;
-  }
-}
 .testimonials__text {
   width: 100%;
   max-width: 740px;
@@ -4076,6 +4196,18 @@ h6 {
   .testimonials__text {
     font-size: 32px;
     font-weight: 400;
+    line-height: 120%;
+    padding-right: 0;
+  }
+}
+@media only screen and (max-width: 577px) {
+  .testimonials__text {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 120%;
+    padding-right: 5px;
+    height: 342px;
+    width: 343px;
   }
 }
 .testimonials__rating {
@@ -4097,6 +4229,12 @@ h6 {
     height: 28px;
   }
 }
+@media only screen and (max-width: 577px) {
+  .testimonials__rating .starsvg {
+    width: 38px;
+    height: 38px;
+  }
+}
 .testimonials__author {
   font-weight: 300;
   font-size: 20px;
@@ -4113,7 +4251,8 @@ h6 {
 }
 @media only screen and (max-width: 577px) {
   .testimonials .testi_product {
-    max-width: 343px;
+    max-width: max-content;
+    height: 538px;
   }
 }
 .testimonials__slider {
@@ -4129,6 +4268,14 @@ h6 {
     height: auto;
     padding-top: 2px;
     padding-bottom: 24px;
+  }
+}
+@media only screen and (max-width: 577px) {
+  .testimonials__slider {
+    flex-direction: row;
+    height: auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
 .testimonials__slider .arrow {

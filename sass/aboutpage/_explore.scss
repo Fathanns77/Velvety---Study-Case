@@ -84,7 +84,7 @@
         &-head {
           font-size: 40px;
           font-weight: 300;
-          letter-spacing: 120%;
+          line-height: 120%;
           font-family: $font-primary;
           color: $content-color-dark-2;
 
@@ -198,6 +198,7 @@
               font-weight: 300;
               text-decoration: line-through;
               color: $content-color-light-3;
+              line-height: 140%;
 
               @media screen and (max-width: $bp-mobilelarge) {
                 font-size: 18px;
@@ -208,6 +209,7 @@
               font-size: 22px;
               font-weight: 700;
               color: $content-color-dark-2;
+              line-height: 140%;
 
               @media screen and (max-width: $bp-mobilelarge) {
                 font-size: 18px;
@@ -243,7 +245,7 @@
 
             .rating__number {
               font-size: 22px;
-              letter-spacing: 140%;
+              line-height: 140%;
 
               color: $content-color-dark-1;
 

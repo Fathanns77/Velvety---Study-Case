@@ -88,6 +88,7 @@
       gap: 14px;
 
       font-size: 22px;
+              line-height: 140%;
       text-align: center;
       text-decoration: none;
       list-style: none;
@@ -129,6 +130,9 @@
       gap: 64px;
       padding: 32px 40px;
     }
+    @media screen and (max-width: $bp-smallest) {
+      padding: 64px 16px 32px 16px;
+    }
 
     &--item {
       display: flex;
@@ -145,6 +149,7 @@
       &__subtitle {
         font-size: 20px;
         color: $content-color-light-2;
+        line-height: 140%;
 
         @media screen and (max-width: $bp-large) {
           font-size: 14px;
@@ -158,6 +163,7 @@
       &__hours {
         font-size: 22px;
         color: $content-color-dark-1;
+        line-height: 140%;
 
         @media screen and (max-width: $bp-large) {
           font-size: 16px;
@@ -270,6 +276,7 @@
   &__designed {
     font-size: 18px;
     text-align: center;
+    line-height: 140%;
   }
 
   &__links {
@@ -278,6 +285,7 @@
     align-items: flex-start;
     gap: 40px;
     font-size: 18px;
+    line-height: 140%;
     color: $content-color-dark-2;
     list-style: none;
 

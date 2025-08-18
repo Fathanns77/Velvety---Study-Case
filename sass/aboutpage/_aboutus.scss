@@ -48,6 +48,7 @@
           &-title {
             font-size: 28px;
             color: $content-color-light-4;
+            line-height: 110.00000000000001%;
 
             @media screen and (max-width: $bp-mobilelarge) {
               font-size: 24px;
@@ -57,6 +58,7 @@
           &-sub {
             font-size: 56px;
             color: $content-color-dark-2;
+            line-height: 120%;
 
             @media screen and (max-width: $bp-mobilelarge) {
               font-size: 40px;
@@ -121,6 +123,7 @@
                 font-family: $font-secondary;
                 font-size: 20px;
                 font-style: italic;
+                line-height: 140%;
                 color: $content-color-light-3;
               }
             }
@@ -151,9 +154,7 @@
           padding: 0px 16px;
         }
 
-        border-width: 1px 0px 1px 0px;
-        border-style: solid;
-        border-color: $color-primary;
+        box-shadow: inset 0 1px 0 0 #c8d8c0, /* top */ inset 0 -1px 0 0 #c8d8c0; /* bottom */
 
         .mission {
           display: flex;
