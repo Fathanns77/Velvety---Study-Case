@@ -52,6 +52,7 @@
 
             @media screen and (max-width: $bp-mobilelarge) {
               font-size: 24px;
+              line-height: 26px;
             }
           }
 
@@ -116,6 +117,12 @@
 
                 @media screen and (max-width: $bp-largest) {
                   font-size: 32px;
+                  line-height: 38.4px;
+                  letter-spacing: 1.5px;
+                }
+                
+                @media screen and (max-width: $bp-mobilelarge) {
+                  height: 342px;
                 }
               }
 
@@ -179,6 +186,7 @@
 
             @media screen and (max-width: $bp-mobilelarge) {
               font-size: 32px;
+              line-height: 38px;
             }
           }
 
@@ -221,6 +229,11 @@
             font-size: 40px;
             font-weight: 300;
             line-height: 120%;
+
+            @media screen and (max-width: $bp-mobilelarge) {
+              font-size: 32px;
+              line-height: 38px;
+            }
           }
 
           &-subtitle {

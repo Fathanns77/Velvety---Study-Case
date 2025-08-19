@@ -46,6 +46,11 @@
         height: 131px;
         max-height: 131px;
 
+        @media screen and (max-width: $bp-mobilelarge) {
+          height: unset;
+          max-height: none;
+        }
+
         gap: 16px;
 
         .desc__main {
@@ -56,6 +61,7 @@
 
           @media screen and (max-width: $bp-mobilelarge) {
             font-size: 24px;
+            line-height: 26px;
           }
         }
 

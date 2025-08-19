@@ -37,6 +37,7 @@
       height: 350.42px;
       top: 292px;
       z-index: 9;
+      overflow: hidden;
 
       @media only screen and (max-width: $bp-medium) {
         width: 890px;
@@ -265,8 +266,8 @@
     }
 
     .ingredients__image {
-      width: 100%;
-      max-width: 375px;
+      height: 100%;
+      max-height: 227.65px;
     }
   }
 }

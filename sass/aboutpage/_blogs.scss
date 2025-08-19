@@ -41,6 +41,7 @@
 
           @media screen and (max-width: $bp-mobilelarge) {
             font-size: 24px;
+            line-height: 26px;
           }
         }
 
@@ -110,7 +111,7 @@
           .desc-date {
             font-size: 16px;
             font-weight: 400;
-            line-height: 140%;
+            line-height: 22px;
 
             color: $content-color-light-3;
           }
@@ -123,6 +124,7 @@
 
             @media screen and (max-width: $bp-mobilelarge) {
               font-size: 24px;
+              line-height: 29px;
             }
           }
 
@@ -151,7 +153,7 @@
 
           .button_title {
             font-size: 16px;
-            line-height: 140%;
+            line-height: 22px;
             font-weight: 600;
             color: $content-color-dark-2;
           }

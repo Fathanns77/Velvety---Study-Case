@@ -28,10 +28,6 @@
     justify-content: center;
     position: relative;
 
-    @media screen and (max-width: $bp-mobilelarge) {
-      gap: 56px;
-    }
-
     &-headline {
       display: flex;
       flex-direction: column;
@@ -39,10 +35,14 @@
       padding-bottom: 56px;
       gap: 16px;
 
+      @media screen and (max-width: $bp-mobilelarge) {
+        padding-bottom: 48px;
+      }
+
       .headline__main {
         font-size: 24px;
         font-weight: 300;
-        line-height: 110%;
+        line-height: 26px;
 
         color: $content-color-light-3;
       }
@@ -90,6 +90,7 @@
 
           @media screen and (max-width: $bp-mobilelarge) {
             font-size: 32px;
+            line-height: 38px;
           }
         }
 
@@ -114,6 +115,7 @@
 
         @media screen and (max-width: $bp-mobilelarge) {
           gap: 16px;
+          padding-bottom: 48px;
         }
 
         &::-webkit-scrollbar {
@@ -170,7 +172,6 @@
             flex-direction: column;
             gap: 10px;
 
-            
             @media screen and (max-width: $bp-mobilelarge) {
               gap: 4px;
             }
@@ -185,6 +186,7 @@
 
             @media screen and (max-width: $bp-mobilelarge) {
               font-size: 18px;
+              line-height: 25px;
             }
           }
 
@@ -202,6 +204,7 @@
 
               @media screen and (max-width: $bp-mobilelarge) {
                 font-size: 18px;
+                              line-height: 25px;
               }
             }
 
@@ -213,6 +216,7 @@
 
               @media screen and (max-width: $bp-mobilelarge) {
                 font-size: 18px;
+                              line-height: 25px;
               }
             }
           }
@@ -251,6 +255,7 @@
 
               @media screen and (max-width: $bp-mobilelarge) {
                 font-size: 16px;
+                line-height: 22px;
               }
             }
           }
