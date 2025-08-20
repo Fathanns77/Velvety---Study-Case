@@ -55,12 +55,13 @@
           font-size: clamp(48px, 8vw, 108px);
           text-align: center;
           font-weight: 300;
-          line-height: 110.00000000000001%;
+          line-height: 119px;
           font-family: $font-primary;
           color: $content-color-light-1;
 
           @media screen and (max-width: $bp-largest) {
             padding: 0px 32px;
+            line-height: 110.00000000000001%;
           }
 
           @media screen and (max-width: $bp-mobilelarge) {
@@ -94,6 +95,7 @@
       .content__img {
         display: flex;
         justify-content: center;
+        height: 512px;
 
         @media screen and (max-width: $bp-mobilelarge) {
           height: 397px;

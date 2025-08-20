@@ -695,16 +695,19 @@ h6 {
 }
 .featured__subtitle {
   color: #899f87;
+  line-height: 31px;
 }
 @media only screen and (max-width: 577px) {
   .featured__subtitle {
     font-size: 24px;
+    line-height: 26px;
   }
 }
 .featured__title {
   text-align: center;
   font-size: 56px;
   text-align: center;
+  line-height: 67px;
 }
 @media only screen and (max-width: 768px) {
   .featured__title {
@@ -767,7 +770,7 @@ h6 {
 }
 .featured__products .product-card__name {
   font-size: 28px;
-  line-height: 110%;
+  line-height: 31px;
 }
 .featured__products .product-card__image {
   align-self: center;
@@ -778,7 +781,7 @@ h6 {
 .featured__products .product-card__price {
   font-weight: 700;
   font-size: 22px;
-  line-height: 140%;
+  line-height: 31px;
   color: #213721;
 }
 .featured__products .rating {
@@ -799,7 +802,7 @@ h6 {
   font-family: "Aileron", sans-serif;
   font-weight: 300;
   font-size: 22px;
-  line-height: 140%;
+  line-height: 31px;
   color: #3c5e39;
 }
 .featured__products .product-card__image {
@@ -812,6 +815,7 @@ h6 {
   padding: 32px;
   gap: 24px;
   width: 480px;
+  height: 688px;
   border-width: 0px 1px;
   border-style: solid;
   border-color: #c8d8c0;
@@ -2549,13 +2553,14 @@ h6 {
   font-size: clamp(48px, 8vw, 108px);
   text-align: center;
   font-weight: 300;
-  line-height: 110%;
+  line-height: 119px;
   font-family: "IvyMode", sans-serif;
   color: #f2f6ef;
 }
 @media screen and (max-width: 1200px) {
   .heroabout__main-content .content__headline .content__headline-title {
     padding: 0px 32px;
+    line-height: 110%;
   }
 }
 @media screen and (max-width: 425px) {
@@ -2588,6 +2593,7 @@ h6 {
 .heroabout__main-content .content__img {
   display: flex;
   justify-content: center;
+  height: 512px;
 }
 @media screen and (max-width: 425px) {
   .heroabout__main-content .content__img {
@@ -2685,7 +2691,13 @@ h6 {
 .aboutus__wrapper-content .content__velvety .velvety__headline-title {
   font-size: 28px;
   color: #738c71;
-  line-height: 110%;
+  line-height: 31px;
+}
+@media screen and (max-width: 1024px) {
+  .aboutus__wrapper-content .content__velvety .velvety__headline-title {
+    font-size: 28px;
+    line-height: 110%;
+  }
 }
 @media screen and (max-width: 425px) {
   .aboutus__wrapper-content .content__velvety .velvety__headline-title {
@@ -2696,7 +2708,12 @@ h6 {
 .aboutus__wrapper-content .content__velvety .velvety__headline-sub {
   font-size: 56px;
   color: #213721;
-  line-height: 120%;
+  line-height: 66px;
+}
+@media screen and (max-width: 1024px) {
+  .aboutus__wrapper-content .content__velvety .velvety__headline-sub {
+    line-height: 120%;
+  }
 }
 @media screen and (max-width: 425px) {
   .aboutus__wrapper-content .content__velvety .velvety__headline-sub {
@@ -2721,7 +2738,7 @@ h6 {
   }
 }
 .aboutus__wrapper-content .content__velvety .velvety__main-ilustration {
-  width: clamp(343px, 39.72vw, 572px);
+  height: clamp(323.21px, 39.72vw, 539px);
 }
 .aboutus__wrapper-content .content__velvety .velvety__main .velety__main-container {
   display: flex;
