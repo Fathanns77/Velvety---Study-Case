@@ -2230,6 +2230,14 @@ h6 {
   text-align: center;
   line-height: 140%;
 }
+.footer__designed a {
+  text-decoration: none;
+  transition: all 1s;
+}
+.footer__designed a:hover, .footer__designed a:focus {
+  color: rgb(172.5, 196.5, 160.5);
+  text-decoration: underline;
+}
 .footer__links {
   display: flex;
   flex-direction: row;
@@ -2244,6 +2252,11 @@ h6 {
 .footer__links a {
   text-decoration: none;
   color: inherit;
+  transition: all 1s;
+}
+.footer__links:hover, .footer__links:focus {
+  color: rgb(172.5, 196.5, 160.5);
+  text-decoration: underline;
 }
 
 .ingredients {

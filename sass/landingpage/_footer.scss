@@ -277,6 +277,17 @@
     font-size: 18px;
     text-align: center;
     line-height: 140%;
+
+        a {
+      text-decoration: none;
+      transition: all 1s;
+
+                &:hover,
+      &:focus {
+        color: darken($color-primary, 10%);
+        text-decoration: underline;
+      }
+    }
   }
 
   &__links {
@@ -295,12 +306,12 @@
       text-decoration: none;
       color: inherit;
       transition: all 1s;
+    }
 
-      &:hover,
+          &:hover,
       &:focus {
         color: darken($color-primary, 10%);
         text-decoration: underline;
       }
-    }
   }
 }
