@@ -412,7 +412,7 @@ h6 {
 .hero {
   background-color: #899f87;
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-bg.webp");
   background-size: 50vw;
   background-repeat: no-repeat;
   background-position: right top;
