@@ -37,7 +37,8 @@ $font-primary: "IvyMode", sans-serif;
 /* IvyMode - Light */
 @font-face {
   font-family: "IvyMode";
-  src: url("fonts/IvyMode_Light.woff2") format("opentype");
+  src: url("fonts/IvyMode_Light.woff2") format("opentype");  
+  font-display: swap;
 }
 
 * {
