@@ -8,7 +8,11 @@
 
   <title>Velvety &mdash;</title>
   <link href="https://fonts.cdnfonts.com/css/aileron" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preload" href="/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="/css/style.css">
+  </noscript>
+
   <link rel="shortcut icon" type="image/png" href="img/logo small.png" />
 </head>
 
@@ -198,7 +202,7 @@
       <div class="product-card-2">
         <div class="product-card__image">
           <a href="#">
-            <img src="img/Product Image 2.png" alt="Velvety Notorious" class="img-2"/>
+            <img src="img/Product Image 2.png" alt="Velvety Notorious" class="img-2" />
           </a>
         </div>
         <div class="product-card__desc">
