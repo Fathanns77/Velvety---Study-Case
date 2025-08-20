@@ -32,13 +32,12 @@ $bp-mobilelarge: 425px;
 $bp-mobile: 375px;
 
 $font-secondary: "Aileron", sans-serif;
-$font-primary: "IvyMode", Arial, sans-serif;
+$font-primary: "IvyMode", sans-serif;
 
 /* IvyMode - Light */
 @font-face {
   font-family: "IvyMode";
-  src: url("fonts/IvyMode_Light.woff2") format("woff2");  
-  font-display: optional;
+  src: url("fonts/IvyMode_Light.otf") format("opentype");
 }
 
 * {

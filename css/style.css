@@ -1,8 +1,7 @@
 /* IvyMode - Light */
 @font-face {
   font-family: "IvyMode";
-  src: url("fonts/IvyMode_Light.woff2") format("woff2");
-  font-display: optional;
+  src: url("fonts/IvyMode_Light.otf") format("opentype");
 }
 * {
   margin: 0;
@@ -30,14 +29,14 @@ body a {
 }
 
 h1 {
-  font-family: "IvyMode", Arial, sans-serif;
+  font-family: "IvyMode", sans-serif;
   font-weight: 300;
   font-style: light;
   line-height: 110%;
 }
 
 h2 {
-  font-family: "IvyMode", Arial, sans-serif;
+  font-family: "IvyMode", sans-serif;
   font-weight: 300;
   font-style: light;
   line-height: 120%;
@@ -45,7 +44,7 @@ h2 {
 }
 
 h3 {
-  font-family: "IvyMode", Arial, sans-serif;
+  font-family: "IvyMode", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -55,7 +54,7 @@ h3 {
 }
 
 h5 {
-  font-family: "IvyMode", Arial, sans-serif;
+  font-family: "IvyMode", sans-serif;
   font-weight: 300;
   font-size: 30px;
   line-height: 120%;
@@ -380,7 +379,7 @@ h6 {
     font-size: 32px;
     text-decoration: none;
     color: #213721;
-    font-family: "IvyMode", Arial, sans-serif;
+    font-family: "IvyMode", sans-serif;
     font-weight: 300;
   }
   .nav__mobile-login {
@@ -1084,7 +1083,7 @@ h6 {
   color: #899f87;
 }
 .all-products .headline-subtitle {
-  font-family: "IvyMode", Arial, sans-serif;
+  font-family: "IvyMode", sans-serif;
   font-size: 56px;
   font-weight: 300;
   color: #213721;
@@ -2560,7 +2559,7 @@ h6 {
   text-align: center;
   font-weight: 300;
   line-height: 119px;
-  font-family: "IvyMode", Arial, sans-serif;
+  font-family: "IvyMode", sans-serif;
   color: #f2f6ef;
 }
 @media screen and (max-width: 1200px) {
@@ -2583,7 +2582,7 @@ h6 {
   text-align: center;
   font-weight: 300;
   line-height: 140%;
-  font-family: "IvyMode", Arial, sans-serif;
+  font-family: "IvyMode", sans-serif;
   color: #f2f6ef;
 }
 @media screen and (max-width: 1200px) {
@@ -2838,7 +2837,7 @@ h6 {
   width: 48px;
 }
 .aboutus__wrapper-content .missionandvision .mission-title {
-  font-family: "IvyMode", Arial, sans-serif;
+  font-family: "IvyMode", sans-serif;
   font-size: 40px;
   font-weight: 300;
   line-height: 120%;
@@ -2881,7 +2880,7 @@ h6 {
   width: 48px;
 }
 .aboutus__wrapper-content .missionandvision .vision-title {
-  font-family: "IvyMode", Arial, sans-serif;
+  font-family: "IvyMode", sans-serif;
   font-size: 40px;
   font-weight: 300;
   line-height: 120%;
@@ -2981,7 +2980,7 @@ h6 {
   font-size: 40px;
   font-weight: 300;
   line-height: 120%;
-  font-family: "IvyMode", Arial, sans-serif;
+  font-family: "IvyMode", sans-serif;
   color: #213721;
 }
 @media screen and (max-width: 425px) {
@@ -3672,7 +3671,7 @@ h6 {
 .stats__content .stat__item-main {
   font-size: 56px;
   font-weight: 300;
-  font-family: "IvyMode", Arial, sans-serif;
+  font-family: "IvyMode", sans-serif;
   line-height: 120%;
   letter-spacing: 1%;
   align-self: center;
@@ -3921,7 +3920,7 @@ h6 {
   font-weight: 300;
   line-height: 120%;
   color: #f2f6ef;
-  font-family: "IvyMode", Arial, sans-serif;
+  font-family: "IvyMode", sans-serif;
 }
 @media only screen and (max-width: 992px) {
   .cta__title {
