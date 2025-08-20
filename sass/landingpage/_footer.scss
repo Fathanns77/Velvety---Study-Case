@@ -277,18 +277,6 @@
     font-size: 18px;
     text-align: center;
     line-height: 140%;
-
-  a {
-    color: $color-primary; 
-    text-decoration: underline;
-    transition: color 0.3s ease;
-
-    &:hover,
-    &:focus {
-      color: $content-color-dark-2;
-      border-bottom-color: $content-color-dark-2;
-    }
-  }
   }
 
   &__links {
