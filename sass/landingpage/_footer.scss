@@ -278,16 +278,18 @@
     text-align: center;
     line-height: 140%;
 
-        a {
-      text-decoration: none;
-      transition: all 1s;
+  a {
+    color: $color-primary; 
+    font-weight: 600;       // lebih tebal dari teks biasa
+    border-bottom: 1px dashed $color-primary; // alternatif selain underline
+    transition: color 0.3s ease;
 
-                &:hover,
-      &:focus {
-        color: $content-color-dark-2;
-        text-decoration: underline;
-      }
+    &:hover,
+    &:focus {
+      color: $content-color-dark-2;
+      border-bottom-color: $content-color-dark-2;
     }
+  }
   }
 
   &__links {
